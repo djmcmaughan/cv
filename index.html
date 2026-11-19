@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darcy Jones (DJ) McMaughan, Ph.D. — Curriculum Vitae</title>
+<meta name="description" content="Curriculum vitae of Darcy Jones (DJ) McMaughan, Ph.D., Professor and Interim School Head, Oklahoma State University.">
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #59636e;
+    --line: #e3e6ea;
+    --accent: #c24e14;
+    --accent-soft: #fbf1ea;
+    --bg: #ffffff;
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Liberation Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Liberation Sans", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
+  a { color: var(--accent); text-decoration: none; word-break: break-word; }
+  a:hover { text-decoration: underline; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 56px; }
+
+  header.top { border-bottom: 1px solid var(--line); background: linear-gradient(180deg, #fff 0%, #fcfaf8 100%); }
+  header.top .inner { max-width: 1120px; margin: 0 auto; padding: 56px 28px 40px; display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; }
+  .eyebrow { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 10px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 4.4vw, 46px); line-height: 1.1; margin: 0 0 14px; letter-spacing: -.01em; }
+  .roles { margin: 0; color: var(--muted); font-size: 16px; }
+  .roles strong { color: var(--ink); font-weight: 600; }
+  .contact { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14.5px; }
+  .contact a { color: var(--ink); border-bottom: 1px solid var(--line); }
+  .contact a:hover { border-color: var(--accent); text-decoration: none; }
+  .actions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; padding: 12px 20px; border-radius: 8px; font-weight: 600; font-size: 15px; }
+  .btn:hover { background: #a8410f; text-decoration: none; }
+  .btn svg { width: 18px; height: 18px; }
+  .updated { font-size: 13px; color: var(--muted); }
+
+  nav.toc { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; padding: 36px 0 24px; font-size: 13.5px; }
+  nav.toc p { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; font-weight: 600; }
+  nav.toc ol { list-style: none; padding: 0; margin: 0; border-left: 1px solid var(--line); }
+  nav.toc a { display: block; padding: 5px 0 5px 14px; color: var(--muted); line-height: 1.35; margin-left: -1px; border-left: 2px solid transparent; }
+  nav.toc a:hover { color: var(--ink); text-decoration: none; }
+  nav.toc a.active { color: var(--accent); border-left-color: var(--accent); }
+
+  main { padding: 28px 0 80px; min-width: 0; }
+  main h2 { font-family: var(--serif); font-weight: 400; font-size: 26px; margin: 52px 0 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  main h2:first-child { margin-top: 12px; }
+  main h3 { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 28px 0 10px; font-weight: 600; }
+  main p { margin: 0 0 12px; }
+  main ol { padding-left: 2.2em; margin: 0 0 12px; }
+  main ol li { margin-bottom: 12px; padding-left: 4px; }
+  main ol li::marker { color: var(--muted); font-size: .92em; }
+  main ol li p { margin: 0; }
+  p.highlight { margin: -6px 0 16px; padding: 8px 12px; background: var(--accent-soft); border-left: 3px solid var(--accent); font-size: 14px; border-radius: 0 6px 6px 0; }
+
+  .metrics { display: flex; gap: 12px; margin: 0 0 22px; flex-wrap: wrap; }
+  .metrics div { border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; min-width: 120px; }
+  .metrics b { display: block; font-family: var(--serif); font-size: 26px; font-weight: 400; line-height: 1.1; }
+  .metrics span { font-size: 12.5px; color: var(--muted); }
+  .key { font-size: 13.5px; color: var(--muted); }
+
+  .entries { margin: 0; }
+  .entry { display: grid; grid-template-columns: 1fr auto; gap: 2px 24px; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+  .entry:last-child { border-bottom: 0; }
+  .entry .title { font-weight: 600; }
+  .entry .when { color: var(--muted); font-size: 14.5px; white-space: nowrap; text-align: right; }
+  .entry .where { grid-column: 1 / -1; color: var(--muted); font-size: 14.5px; }
+
+  ul.awards { list-style: none; padding: 0; margin: 0; }
+  ul.awards li { display: grid; grid-template-columns: 56px 1fr; padding: 7px 0; border-bottom: 1px dashed var(--line); }
+  ul.awards .yr { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; padding: 24px; }
+
+  @media (max-width: 860px) {
+    .wrap { grid-template-columns: 1fr; gap: 0; }
+    nav.toc { display: none; }
+    header.top .inner { padding-top: 36px; }
+    .actions { align-items: flex-start; }
+    .entry { grid-template-columns: 1fr; }
+    .entry .when { text-align: left; }
+  }
+
+  @media print {
+    @page { size: Letter; margin: 0.7in 0.75in 0.75in; }
+    body { font-size: 10.5pt; line-height: 1.4; }
+    header.top { background: none; }
+    header.top .inner { padding: 0 0 14pt; display: block; }
+    h1 { font-size: 24pt; }
+    .actions, nav.toc, footer { display: none !important; }
+    .wrap { display: block; padding: 0; max-width: none; }
+    main { padding: 0; }
+    main h2 { font-size: 15pt; margin: 20pt 0 8pt; padding-bottom: 4pt; break-after: avoid; }
+    main h3 { break-after: avoid; margin: 12pt 0 6pt; }
+    main ol li, .entry, ul.awards li, p.highlight { break-inside: avoid; }
+    main ol li { margin-bottom: 6pt; }
+    .entry { padding: 6pt 0; }
+    .metrics div { padding: 6pt 12pt; }
+    .metrics b { font-size: 16pt; }
+    a { color: var(--ink); }
+    main a { color: #8a3a10; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="inner">
+    <div>
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1>Darcy Jones (DJ) McMaughan, Ph.D.</h1>
+      <p class="roles"><strong>Professor</strong> &middot; <strong>Interim School Head</strong> &middot; Joan Donelson Jacques Health Promotion Endowed Professor<br>
+      School of Community Health Sciences, Counseling and Counseling Psychology &middot; Oklahoma State University</p>
+      <div class="contact">
+        <a href="mailto:darcy.mcmaughan@okstate.edu">darcy.mcmaughan@okstate.edu</a>
+        <a href="https://experts.okstate.edu/darcy.mcmaughan/about" target="_blank" rel="noopener">OSU Experts Directory</a>
+        <a href="https://scholar.google.com/citations?user=tdUG9DsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Darcy-Jones-Mcmaughan" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="https://orcid.org/0000-0002-2147-2686" target="_blank" rel="noopener">ORCID</a>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn" href="McMaughan_CV.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download CV (PDF)
+      </a>
+      <span class="updated">Updated August 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="toc" aria-label="Sections">
+    <p>Sections</p>
+    <ol>
+      <li><a href="#appointments">Academic Appointments</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#peer-reviewed-publications">Peer Reviewed Publications</a></li>
+      <li><a href="#publications-submitted-and-under-review">Publications Under Review</a></li>
+      <li><a href="#edited-book-volumes">Edited Book Volumes</a></li>
+      <li><a href="#book-chapters">Book Chapters</a></li>
+      <li><a href="#published-reports">Published Reports</a></li>
+      <li><a href="#policy-briefs">Policy Briefs</a></li>
+      <li><a href="#published-peer-reviewed-conference-abstracts">Conference Abstracts</a></li>
+      <li><a href="#peer-reviewed-presentations">Peer-Reviewed Presentations</a></li>
+      <li><a href="#oklahoma-state-university-undergraduate-research-symposium">OSU Undergraduate Research Symposium</a></li>
+      <li><a href="#invited-presentations">Invited Presentations</a></li>
+      <li><a href="#moderated-panels-and-presentations">Moderated Panels and Presentations</a></li>
+      <li><a href="#funded-projects">Funded Projects</a></li>
+      <li><a href="#under-review-and-unfunded-proposals-since-2020">Proposals Under Review</a></li>
+      <li><a href="#keynotes">Keynotes</a></li>
+      <li><a href="#media-appearances">Media Appearances</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#student-advising">Student Advising</a></li>
+      <li><a href="#honors-and-awards">Honors and Awards</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#professional-memberships">Professional Memberships</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <h2 id="appointments">Academic Appointments</h2>
+    <div class="entries">
+      <div class="entry"><span class="title">Professor</span><span class="when">2026–present</span><span class="where">Public Health Program, School of Community Health Sciences, Counseling and Counseling Psychology, College of Education and Human Sciences, Oklahoma State University</span></div>
+      <div class="entry"><span class="title">Interim School Head</span><span class="when">July 1, 2025–present</span><span class="where">School of Community Health Sciences, Counseling and Counseling Psychology, College of Education and Human Sciences, Oklahoma State University</span></div>
+      <div class="entry"><span class="title">Joan Donelson Jacques Health Promotion Endowed Professor</span><span class="when">2024–present</span><span class="where">College of Education and Human Sciences, Oklahoma State University</span></div>
+      <div class="entry"><span class="title">Program Area Coordinator</span><span class="when">2023–2025, 2026–present</span><span class="where">Public Health Program, School of Community Health Sciences, Counseling and Counseling Psychology, College of Education and Human Sciences, Oklahoma State University</span></div>
+      <div class="entry"><span class="title">Associate Professor (confers tenure)</span><span class="when">2023–2026</span><span class="where">Public Health Program, School of Community Health Sciences, Counseling and Counseling Psychology, College of Education and Human Sciences, Oklahoma State University</span></div>
+      <div class="entry"><span class="title">Assistant Professor</span><span class="when">2020–2023</span><span class="where">Public Health Program, School of Community Health Sciences, Counseling and Counseling Psychology, College of Education and Human Sciences, Oklahoma State University</span></div>
+      <div class="entry"><span class="title">Assistant Professor</span><span class="when">2013–2020</span><span class="where">Department of Health Policy and Management, School of Public Health, Texas A&amp;M University Health Science Center</span></div>
+      <div class="entry"><span class="title">Assistant Research Scientist</span><span class="when">2010–2013</span><span class="where">Department of Health Policy and Management, School of Rural Public Health, Texas A&amp;M University System Health Science Center</span></div>
+    </div>
+
+    <h2 id="education">Education</h2>
+    <div class="entries">
+      <div class="entry"><span class="title">Ph.D., Health Services Research</span><span class="when"></span><span class="where">Texas A&amp;M University System Health Science Center, School of Rural Public Health, Department of Health Policy and Management</span></div>
+      <div class="entry"><span class="title">M.S.Ed., Educational Psychology</span><span class="when"></span><span class="where">Texas A&amp;M University, College of Education, Department of Educational Psychology</span></div>
+      <div class="entry"><span class="title">B.A., Psychology (Summa cum laude)</span><span class="when"></span><span class="where">Texas A&amp;M University, College of Liberal Arts, Department of Psychology</span></div>
+      <div class="entry"><span class="title">Propedeuse in Psychology (with honors)</span><span class="when"></span><span class="where">University of Amsterdam, College of Liberal Arts, Department of Psychology</span></div>
+    </div>
+
+
+
+
+
+
+
+<h2 id="peer-reviewed-publications">Peer Reviewed Publications</h2>
+<div class="metrics"><div><b>2,696</b><span>Citations</span></div><div><b>21</b><span>h-index</span></div><div><b>33</b><span>i10-index</span></div></div>
+
+<p class="key">*indicates student author ^ indicates community author + indicates senior author</p>
+<p>60. Parker, E., Abel, E., Silwal, A., Lee, T., Roy, E., Mulcahy, A., &amp; <strong>McMaughan, DJ.</strong> (2026). Syndemics in the Sooner State: A cross-sectional analysis of delivery hospitalizations and severe maternal morbidity in Oklahoma, 2019 - 2024. <em>Health Equity</em>. 2026;10. doi:<a href="https://doi.org/10.1177/24731242261507909" rel="noopener" target="_blank">https://doi.org/10.1177/24731242261507909</a></p>
+<p>59. Cornell, C.<sup>*</sup>, Silwal, A., Welch, G., Bailey, L., <strong>McMaughan, DJ<sup>+</sup></strong>. (2026). Vaccine hesitancy among U.S. parents: A mini review. <em>Frontiers in Public Health</em>. <a href="https://doi.org/10.3389/fpubh.2026.1823951" rel="noopener" target="_blank">https://doi.org/10.3389/fpubh.2026.1823951</a></p>
+<p>58. Han, H., Kim, H., Ryu, Y., Lee, J., Chen, X., <strong>McMaughan, DJ.</strong> (2026). Associations between modifiable health behaviors and obesity Among U.S. college students: An analysis of the ACHA-NCHA data. <em>American Journal of Health Promotion.</em> <a href="https://doi.org/10.1177/08901171261428683" rel="noopener" target="_blank">https://doi.org/10.1177/08901171261428683</a></p>
+<p>57. Kane, T.*, Han, H., Lee, S., Grant, E*., <strong>McMaughan, DJ</strong>, Jones, R., &amp; Ryu, Y. (2025). Prevalence of substance use and food insecurity among transgender and gender diverse college students. <em>Journal of American College Health</em>, 1-8. <a href="https://doi.org/10.1080/07448481.2025.2611280" rel="noopener" target="_blank">https://doi.org/10.1080/07448481.2025.2611280</a></p>
+<p>56. Mulcahy, A., Schmidt, E. K., <strong>McMaughan, DJ</strong>, Shinnick-Goddard, K., Batza, K., Wallisch, A. M., Streed, C. G., Kurth, N., &amp; Hall, J. (2025). Discrimination among disabled adults in the United States: findings from the 2022 National Survey on Health and Disability. <em>Disabilities</em>. <em>5</em>(4),110; <a href="https://doi.org/10.3390/disabilities5040110" rel="noopener" target="_blank">https://doi.org/10.3390/disabilities5040110</a></p>
+<p>55. Knutson, D., Jensen, S.*, Parker, E.*, &amp; <strong>McMaughan, DJ<sup>+</sup></strong> (2025). A case for rural community resilience: Significant urban/rural differences in COVID-19 and mental health hospitalizations in Oklahoma. <em>Journal of Rural Mental Health. 49</em>(4), 433–444. <a href="https://doi.org/10.1037/rmh0000316" rel="noopener" target="_blank">https://doi.org/10.1037/rmh0000316</a></p>
+<p>54. Vogel, E. A., Romm, K. F., <strong>McMaughan, DJ</strong>, Zvolensky, M. J., Garey, L., &amp; Businelle, M.S. (2025). Associations of disability and social support with cannabis use among adults with anxiety and depressive symptoms. <em>Cannabis. <a href="https://doi.org/10.26828/cannabis/2025/000305" rel="noopener" target="_blank">https://doi.org/10.26828/cannabis/2025/000305</a></em></p>
+<p>53. Mulcahy, A., Batza, K., Goddard, K., <strong>McMaughan, DJ</strong>, Kurth, N. K., Streed, C. G., Wallisch, A., &amp; Hall, J. P. (2025). Experiences of patients with disabilities and sexual or gender minority status during healthcare interactions. <em>J Public Health, 33</em>, 1735–1743. <a href="https://doi.org/10.1007/s10389-023-02145-3" rel="noopener" target="_blank">https://doi.org/10.1007/s10389-023-02145-3</a></p>
+<p>52. Imanpour, S., McGehee, A*., &amp; <strong>McMaughan, DJ<sup>+</sup></strong> (2025). “As immigrants we are all lost in our autism journey”: Experiences of raising children with autism, barriers to equal access, and facilitators to accessing autism services among immigrant fathers. <em>Research in Autism, 124</em>, Article 202588<em>.</em> <a href="https://doi.org/10.1016/j.reia.2025.202588" rel="noopener" target="_blank">https://doi.org/10.1016/j.reia.2025.202588</a></p>
+<p>51. Imanpour, S., &amp; <strong>McMaughan DJ<sup>+</sup></strong> (2025). Pain management among older Farsi and Azeri speaking immigrant adults with limited English proficiency (LEP): Interpretive approach. <em>Pain Management Nursing, 26</em>(4), E181-E188. <a href="https://doi.org/10.1016/j.pmn.2024.12.019" rel="noopener" target="_blank">https://doi.org/10.1016/j.pmn.2024.12.019</a></p>
+<p>50. Vogel, E. A., Romm, K. F., <strong>McMaughan, DJ</strong>, LoParco, C. R., Bhanot, P., Cavazos-Rehg, P. A., Szlyk, H., Kasson, E., &amp; Berg, C. J. (2025). Neurodivergence, minority stress, and tobacco use in a sample of U.S. sexual and gender minoritized young adults. <em>Substance Use &amp; Addiction Journal</em>. <a href="https://doi.org/10.1177/2976734225133894" rel="noopener" target="_blank">https://doi.org/10.1177/2976734225133894</a></p>
+<p>49. Imanpour, S., &amp; <strong>McMaughan, DJ<sup>+</sup></strong>. (2024). ‘You never know when you will need an antibiotic’: A qualitative study of structural barriers and cultural assumptions in antibiotic misuse among immigrants in the United States. <em>Journal of Health Services Research &amp; Policy, 29</em>(4), 266-274<em>.</em> <a href="https://doi.org/10.1177/13558196241252748" rel="noopener" target="_blank">https://doi.org/10.1177/13558196241252748</a></p>
+<p>48. Chen, X., Ariati, J.<sup>*</sup>, <strong>McMaughan, DJ</strong>, Han, H., Hubach, R. D., &amp; Miller, B. (2024). COVID-19 information-seeking behaviors and preventive behaviors among college students in Oklahoma. <em>Journal of American College Health, 72</em>(6), 1796-1804. <a href="https://doi.org/10.1080/07448481.2022.2090842" rel="noopener" target="_blank">https://doi.org/10.1080/07448481.2022.2090842</a></p>
+<p>47. <strong>McMaughan, DJ</strong>, Mulcahy, A., McGehee, A.*, Streed, C. G., Wallisch, A., Kurth, N. K., &amp; Hall, J. P. (2024). Gender diversity, disability, and wellness: Impact of delayed and foregone care because of COVID-19. <em>LGBT Health, 11</em>(3), 210-218. <a href="https://doi.org/10.1089/lgbt.2022.0385" rel="noopener" target="_blank">https://doi.org/10.1089/lgbt.2022.0385</a></p>
+<p>46. <strong>McMaughan, DJ</strong>, Lewis, C*., McGehee, A.<sup>*</sup>, Noreen. D.<sup>^</sup>, Parker, E.<sup>*</sup>, &amp; Criss, M. (2024). Meaningful social inclusion and mental well-being among autistic adolescents and emerging adults: A community-based mixed methods study. <em>JMIR Research Protocols, 13</em>(1), Article e52658. <a href="https://doi.org/10.2196/52658" rel="noopener" target="_blank">https://doi.org/10.2196/52658</a></p>
+<p>45. <strong>McMaughan, DJ</strong>, Velky, P.<sup>^</sup>, Burnett, J. P., Halphen, J. M., &amp; Drake, S. A. (2024). Victimization in unlicensed board and care homes in the United States: The case for whole system disruption. <em>Journal of Aging and Social Policy, 36</em>(1), 87-103<em>.</em> <a href="https://doi.org/10.1080/08959420.2023.2195788" rel="noopener" target="_blank">https://doi.org/10.1080/08959420.2023.2195788</a></p>
+<p>44. Chen, X., Ariati, J*., <strong>McMaughan, DJ</strong>, Li, M., &amp; Kreps, G. (2024) How college students evaluate the quality of online health information: A qualitative study. <em>Health Behavior Research</em>, <em>7</em>(4). <a href="https://doi.org/10.4148/2572-1836.1250" rel="noopener" target="_blank">https://doi.org/10.4148/2572-1836.1250</a></p>
+<p>43. Key, K., Carrera, J., <strong>McMaughan, DJ</strong>, Lapeyrouse, L., Howa, R., Carter, A., Bailey, S^., de Danzine, V^., Blanchard, C., Hall, J., Shariff, N., Hailemariam, M., &amp; Johnson, J. (2023). Advancing equity through centering societal values to operationalize racism as a public health crisis: The KKey Values Inequities Model (KVIM). Health Equity, 7(1),</p>
+<p>477-486. <a href="https://doi.org/10.1089/heq.2023.0113" rel="noopener" target="_blank">https://doi.org/10.1089/heq.2023.0113</a></p>
+<p>42. <strong>McMaughan, DJ</strong>, Imanpour, S., Mulcahy, A., Jones, J., &amp; Criss, M. (2023). Mental health related hospitalizations among adolescents and emerging adults with autism in the United States: A cross-sectional analysis of hospital discharge data. <em>Autism, 27</em>(6), 1702-1715. <a href="https://doi.org/10.1177/13623613221143592" rel="noopener" target="_blank">https://doi.org/10.1177/13623613221143592</a></p>
+<p class="highlight">Research highlighted: <a href="https://www.spectrumnews.org/news/spotted/spotted-around-the-web-cdk13-hippocampal-plasticity-science-twitter/" rel="noopener" target="_blank">Spectrum News</a></p>
+<p>41. Wallisch, A., Boyd, B. A., Hall, J. P., Kurth, N. K., Streed, C. J., Mulcahy, A., <strong>McMaughan, DJ</strong>, &amp; Batza, K. (2023). Healthcare disparities among autistic, LGBTQ+ people. Autism in Adulthood, 5(2). <a href="https://doi.org/10.1089/aut.2022.0006" rel="noopener" target="_blank">https://doi.org/10.1089/aut.2022.0006</a> Research highlighted: <a href="https://www.spectrumnews.org/news/spotted-around-the-web-synaptic-vesicle-recycling-telehealth-diagnoses-registered-reports/" rel="noopener" target="_blank">Spectrum News</a> and <a href="https://www.lgbtqnation.com/2024/05/neurodiversity-pride-isnt-centered-on-lgbtq-people-but-perhaps-it-should-be/" rel="noopener" target="_blank">LGBTQ Nation</a></p>
+<p>40. Chen, X., <strong>McMaughan, DJ</strong>, Li, M., Kreps, G. L., Ariati, J.*, Han, H., Rhoades, K. E., Mahaffey, C. C., &amp; Miller, B. M. (2023). Trust in and use of COVID-19 information sources differed by health literacy among college students. <em>Healthcare.</em> 11<em>(6),</em> 831; <a href="https://doi.org/10.3390/healthcare11060831" rel="noopener" target="_blank">https://doi.org/10.3390/healthcare11060831</a></p>
+<p>39. <strong>McMaughan, DJ</strong>, Mulcahy, A.<sup>*</sup>, Tucker, E.<sup>*</sup>, Beverly, J.,<sup>*</sup> Jones, J., &amp; Perez-Patron,</p>
+<p>M. (2022). Hospitalizations among children and youth with autism in the United States: Frequency, characteristics, and costs. <em>Intellectual and Developmental Disabilities</em>, <em>60</em>(6), 484–503. <a href="https://doi.org/10.1352/1934-9556-60.6.484" rel="noopener" target="_blank">https://doi.org/10.1352/1934-9556-60.6.484</a></p>
+<p>38. Cheng, K. J. G.<sup>*</sup>, <strong>McMaughan, DJ</strong>, &amp; Smith, M. L. (2022). The role of optimism on the relationship between activity limitations and life satisfaction among middle-aged and older adults in the United States: A growth curve model of changes over time. <em>Journal of Applied Gerontology, 41</em>(4), 993-1001. <a href="https://doi.org/10.1177/07334648211056638" rel="noopener" target="_blank">https://doi.org/10.1177/07334648211056638</a></p>
+<p>37. Mulcahy, A.<sup>*</sup>, Streed, C. G., Wallisch, A. M., Batza, K., Kurth, N., Hall, J. P., &amp; <strong>McMaughan, DJ<sup>+</sup></strong> (2022). Gender identity, disability, and unmet healthcare needs among disabled people living in the community in the United States. <em>International Journal of Environmental Research and Public Health</em>, <em>19</em>(5), 2588. <a href="http://dx.doi.org/10.3390/ijerph19052588" rel="noopener" target="_blank">http://dx.doi.org/10.3390/ijerph19052588</a></p>
+<p>36. Esquivel, C. H.*, Wilson, K. L., Garney, W. R., McNeill, E. B., <strong>McMaughan, DJ</strong>, Brown, S. &amp; Graves-Boswell, T. (2022) . A case study evaluating youth acceptability of <em>Using the Connect</em> – a sexuality education game-based learning program. <em>American Journal of Sexuality Education, 17</em>(1), 57-83. <a href="https://doi.org/10.1080/15546128.2021.1971128" rel="noopener" target="_blank">https://doi.org/10.1080/15546128.2021.1971128</a></p>
+<p>35. Esquivel, C. H.<sup>*</sup>, Wilson, K. L., Garney, W. R., Exum-Smith, C., <strong>McMaughan, DJ</strong>, &amp; McNeill, E. B. (2022). Using human-centered design to develop an innovative teen pregnancy prevention program: Lessons learned from a case study. <em>Creative Education, 13</em>(4), 1439-1457. <a href="https://doi.org/10.4236/ce.2022.134088" rel="noopener" target="_blank">https://doi.org/10.4236/ce.2022.134088</a></p>
+<p>34. Martinez, L. S., <strong>McMaughan, DJ</strong>, &amp; Strelnick, H. (2022). Advancing COVID-19 response through community participation: Lessons learned from community–academic research partnerships for health. <em>Progress in Community Health Partnerships: Research, Education, and Action, 16</em>(2), 1-3. <a href="http://doi.org/10.1353/cpr.2022.0032" rel="noopener" target="_blank">http://doi.org/10.1353/cpr.2022.0032</a></p>
+<p>33. <strong>McMaughan, DJ</strong>, Rhoads, K. E., Davis, C.<sup>*</sup>, Chen, X., Han, H., Jones, R. A., Mahaffey, C. &amp; Miller, B. M. (2021). COVID-19 related experiences among college students with and without disabilities: Psychosocial impacts, supports, and virtual learning environments. <em>Frontiers in Public Health, 9.</em> Article <em>782793.</em> <a href="https://doi.org/10.3389/fpubh.2021.782793" rel="noopener" target="_blank">https://doi.org/10.3389/fpubh.2021.782793</a></p>
+<p class="highlight">Research highlighted: World Health Organization. (2022). Global report on health equity for persons with disabilities. World Health Organization. <a href="https://apps.who.int/iris/handle/10665/364834" rel="noopener" target="_blank">https://apps.who.int/iris/handle/10665/364834</a></p>
+<p>32. <strong>McMaughan, DJ</strong>, Ozmetin, J., Beverly, J.<sup>*</sup>, &amp; Foster, M. (2021). Supportive housing for older adults with disabilities: Mapping the literature on board and care homes in the United States using the age-friendly communities framework. <em>Journal of Aging and Environment</em>, <em>35</em>(4), 433-449. <a href="https://doi.org/10.1080/26892618.2020.1858383" rel="noopener" target="_blank">https://doi.org/10.1080/26892618.2020.1858383</a></p>
+<p>31. <strong>McMaughan, DJ</strong>, Ozmetin, J., Welch, M.<sup>*</sup>, Mulcahy, A., Imanpour, S., Beverly, J.<sup>*</sup> &amp; Naiser, N. (2021). Framing the front door: Co-creating a home health care assessment of service need for children with disabilities. <em>Home Health Care Services Quarterly, 40</em>(3), 231-246. <a href="https://doi.org/10.1080/01621424.2021.1952132" rel="noopener" target="_blank">https://doi.org/10.1080/01621424.2021.1952132</a>.</p>
+<p class="highlight">Research highlighted: Texas State Legislature</p>
+<p>Coalition of Texans with Disabilities. <a href="https://www.txdisabilities.org/news-events/guest-blog-developing-the-star-kids-screening-and-assessment-instrument" rel="noopener" target="_blank">Coalition of Texans with Disabilities - Developing the SKSAI</a></p>
+<p>30. <strong>McMaughan, DJ</strong>, Lin, S., Ozmetin, J., Beverly, J. G.<sup>*</sup>, Brog, J.<sup>*</sup>, &amp; Naiser, E. (2021). A provider-facing eHealth tool for transitioning youth with special health care needs from pediatric to adult care: Mixed methods, user-engaged usability study. <em>JMIR Formative Research</em>, <em>5</em>(5), Article e22915. <a href="https://doi.org/10.2196/22915" rel="noopener" target="_blank">https://doi.org/10.2196/22915</a></p>
+<p class="highlight">Research highlighted: TAMU Today. <a href="https://today.tamu.edu/2017/07/31/transitioning-children-with-special-health-care-needs-into-adulthood/" rel="noopener" target="_blank">Transitioning Children With Special Health Care Needs Into Adulthood - Texas A&amp;M Today (tamu.edu)</a></p>
+<p>29. <strong>McMaughan, DJ</strong>, Grieb, S. M. D., Kteily-Hawa, R., &amp; Key, K. D. (2021). Promoting and advocating for ethical community engagement: transparency in the</p>
+<p>community-engaged research spectrum. <em>Progress in Community Health Partnerships: Research, Education, and Action</em>, <em>15</em>(4), 419-424. <a href="http://doi.org/10.1353/cpr.2021.0054" rel="noopener" target="_blank">http://doi.org/10.1353/cpr.2021.0054</a></p>
+<p>28. Strelnick, H., Grieb, S. M. D., <strong>McMaughan, DJ</strong>, Key, K. D., &amp; Kteily-Hawa, R. (2021). Beyond the manuscript: Promoting and advocating for ethical community engagement: Transparency in the community-engaged research spectrum. <em>Progress in Community Health Partnerships: Research, Education, and Action, 15</em>(4), 425-429. <a href="https://dx.doi.org/10.1353/cpr.2021.0055" rel="noopener" target="_blank">https://dx.doi.org/10.1353/cpr.2021.0055</a>.</p>
+<p>27. <strong>McMaughan, DJ</strong>, Oloruntoba, O.<sup>*</sup> &amp; Smith, M. L. (2020) Socioeconomic status and access to healthcare: Interrelated drivers for healthy aging. <em>Frontiers in Public Health, 8</em>, 231. <a href="https://doi.org/10.3389/fpubh.2020.00231" rel="noopener" target="_blank">https://doi.org/10.3389/fpubh.2020.00231</a></p>
+<p>26. Lin, S.<sup>*</sup>, Adepoju, O. E., Kash, B., DeSalvo, D. &amp; <strong>McMaughan, DJ<sup>+</sup></strong> (2019). Psychological distress and the use of clinical preventive services by community-dwelling older adults. <em>Journal of Applied Gerontology, 38</em>(5), 599-616. <a href="https://doi.org/10.1177/0733464817693376" rel="noopener" target="_blank">https://doi.org/10.1177/0733464817693376</a></p>
+<p class="highlight">Research highlighted: Vital Record. <a href="https://vitalrecord.tamhsc.edu/depression-anxiety-related-to-lower-breast-cancer-screening-rate/" rel="noopener" target="_blank">Depression, anxiety related to lower breast cancer screening rate - Vital Record (tamhsc.edu)</a></p>
+<p>25. Sanchez Gonzalez, M. L., McCord, C. E., Dopp, A. R., Tarlow, K. R., Dickey, N. J., <strong>McMaughan, D.K.</strong>, &amp; Elliott, T. E. (2019). Telemental health training and delivery in primary care: A case report of interdisciplinary treatment. <em>Journal of Clinical Psychology</em>, <em>75</em>(2), 260-270. <a href="https://doi.org/10.1002/jclp.22719" rel="noopener" target="_blank">https://doi.org/10.1002/jclp.22719</a></p>
+<p>24. Kash, B. A., McKahan, M.<sup>*</sup>, Tomaszewski, L., &amp; <strong>McMaughan, D.</strong> (2018). The four Ps of patient experience: A new strategic framework informed by theory and practice. <em>Health Marketing Quarterly, 35</em>(4), 313-325. <a href="https://doi.org/10.1080/07359683.2018.1524598" rel="noopener" target="_blank">https://doi.org/10.1080/07359683.2018.1524598</a></p>
+<p>23. Imanpour, S.<sup>*</sup>, Nwaiwu, O., DeSalvo, B., Bashir, A., &amp; <strong>McMaughan, D.K.<sup>+</sup></strong> (2017). Factors associated with antibiotic prescriptions for viral origin diseases in office-based practice, 2006-2012. <em>Journal of the Royal Society of Medicine, 8</em>(8), 1-8.</p>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5542152/pdf/10.1177_2054270417717668.pdf" rel="noopener" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5542152/pdf/10.1177_2054270417717668.pdf</a></p>
+<p class="highlight">Research highlighted: Time Magazine: <a href="https://time.com/5747331/unnecessary-antibiotic-prescriptions/" rel="noopener" target="_blank">Up to 43% of U.S. Antibiotic Prescriptions Are Inappropriate | Time</a></p>
+<p>22. Ojinnaka, C. O.<sup>*</sup>, Luo, W., Ory, M. G., <strong>McMaughan, D.</strong>, &amp; Bolin, J. N. (2017). Disparities in surgical treatment of early-stage breast cancer among female residents of Texas: The role of racial residential segregation. <em>Clinical Breast Cancer, 17</em>(2), e43-e52<em>.</em> <a href="https://doi.org/10.1016/j.clbc.2016.10.006" rel="noopener" target="_blank">https://doi.org/10.1016/j.clbc.2016.10.006</a></p>
+<p>21<strong>. McMaughan, D. K.</strong>, Nwaiwu, O., Zhao, H., Frentzel, E., Mehr, D., Imanpour, S<sup>*</sup>., Garfinkel, S., &amp; Phillips, C.D. (2016) Impact of a decision-making aid for suspected urinary tract infections on antibiotic overuse in nursing homes. <em>BMC Geriatrics, 16</em>, Article 81. <a href="https://doi.org/10.1186/s12877-016-0255-9" rel="noopener" target="_blank">https://doi.org/10.1186/s12877-016-0255-9</a></p>
+<p class="highlight">Research highlighted: Association of Schools of Public Health: <a href="https://aspph.org/texas-am-working-to-protect-a-precious-resource-antibiotics-in-nursing-homes/" rel="noopener" target="_blank">ASPPH | Texas A&amp;M Working to Protect a Precious Resource: Antibiotics in Nursing Homes</a></p>
+<p>Vital Record: <a href="https://vitalrecord.tamhsc.edu/work-smarter-testing-a-decision-making-tool-for-antibiotic-use/" rel="noopener" target="_blank">Work smarter: Testing a decision-making tool for antibiotic use - Vital Record (tamhsc.edu)</a></p>
+<p>20. <strong>McMaughan, D. K.,</strong> Huber, J. C., Forjuoh, S., Helduser, J., Ory, M., &amp; Bolin, J. (2016). Physician recommendation of diabetes clinical protocols. <em>Hospital Topics, 94</em>(1), 15-21<em>.</em> <a href="https://doi.org/10.1080/00185868.2016.1142313" rel="noopener" target="_blank">https://doi.org/10.1080/00185868.2016.1142313</a></p>
+<p>19. Frentzel, E., Mangrum, R<strong>., McMaughan, D. K. M.</strong>, Stephens, J., &amp; Perfetto, D. (2015). Developing a guide to nursing home antimicrobial stewardship. <em>Journal of the American Medical Directors Association, 16</em>(3), B12. <a href="https://doi.org/10.1016/j.jamda.2015.01.024" rel="noopener" target="_blank">https://doi.org/10.1016/j.jamda.2015.01.024</a></p>
+<p>18. Kahvecioglu, D., Ramiah, K., <strong>McMaughan, D.</strong>, Garfinkel, S., McSorley, V., Nguyen, Q., Yang, M., Pugliese, C., &amp; Phillips, C. D. (2014). MDRO infections in U.S. nursing homes: A national study of prevalence, onset, and transmission across care settings during October 1, 2010 - December 31, 2011. <em>Infection Control and Hospital Epidemiology, 35</em>(S3), S48-S55. <a href="https://doi.org/10.1086/677835" rel="noopener" target="_blank">https://doi.org/10.1086/677835</a></p>
+<p class="highlight">Research highlighted: OECD Health Working Papers <a href="https://www.oecd-ilibrary.org/docserver/e450a835-en.pdf?expires=1654108571&amp;id=id&amp;accname=guest&amp;checksum=A93A34FAEFF748704567D9E40623149B" rel="noopener" target="_blank">e450a835-en.pdf (oecd-ilibrary.org)</a></p>
+<p>17. Adepoju, O. E., Bolin, J. N., Phillips, C. D., Zhao, H., Ohsfeldt, R., <strong>McMaughan, D.,</strong></p>
+<p>&amp; Forjuoh, S. (2014). Effects of diabetes self-management programs on</p>
+<p>time-to-hospitalization among patients with type 2 diabetes: A survival analysis model. <em>Patient Education and Counseling, 95</em>(1), 111-117. <a href="https://doi.org/10.1016/j.pec.2014.01.001" rel="noopener" target="_blank">https://doi.org/10.1016/j.pec.2014.01.001</a></p>
+<p>16. Elliott, T. R., Patnaik, A., Naiser, E., Fournier, C. J., <strong>McMaughan, D</strong>., Dyer, J., &amp; Phillips, C. (2014). Medicaid personal care services for children with intellectual disabilities: What assistance is provided? When is assistance provided? <em>Intellectual and Developmental Disabilities, 52</em>(1), 24-31. <a href="https://doi.org/10.1352/1934-9556-52.1.24" rel="noopener" target="_blank">https://doi.org/10.1352/1934-9556-52.1.24</a></p>
+<p>15. Forjuoh, S. N., Bolin, J. N., Huber, J. C., Vuong, A. M.*, Adepoju, O. E*., Helduser,</p>
+<p>J. W., Begaye, D. S., Roberson, A., <strong>McMaughan, D. K</strong>., Bonner, T. J., McLeroy, K. R., &amp; Ory, M. G. (2014). Behavioral and technological interventions targeting glycemic control in a racially/ethnically diverse population: A randomized controlled trial. BMC Public Health, 14, Article 71.</p>
+<p><a href="https://doi.org/10.1186/1471-2458-14-71" rel="noopener" target="_blank">https://doi.org/10.1186/1471-2458-14-71</a></p>
+<p>14. Forjuoh, S. N., Bolin, J. N., Vuong, A. M.*, Helduser, J. W., <strong>Moudouni, D. M.</strong>, &amp; Ory,</p>
+<p>M. G. (2014). Primary care physicians’ perceptions of diabetes treatment protocols.</p>
+<p><em>Texas Medicine</em>, <em>110</em>, e1.</p>
+<p>13. <strong>Moudouni, D. K. M</strong>., &amp; Phillips, C. D. (2013). In-hospital mortality and unintentional falls among older adults in the United States. <em>Journal of Applied Gerontology</em>, <em>32</em>(8), 923–935. <a href="https://doi.org/10.1177/0733464812445615" rel="noopener" target="_blank">https://doi.org/10.1177/0733464812445615</a></p>
+<p>12. Miller, T. R., Elliot, T. R., <strong>McMaughan, D.</strong>, Patnaik, A., Naiser, E., Dyer, J. A., Fournier, C., J., Hawes, C., &amp; Phillips, C. D. (2013). Personal care services provided to children with special health care needs (CSHCN) and their subsequent use of physician services. <em>Disability and Health Journal, 6</em>(4), 317-324. <a href="https://doi.org/10.1016/j.dhjo.2013.02.005" rel="noopener" target="_blank">https://doi.org/10.1016/j.dhjo.2013.02.005</a></p>
+<p>11. Helduser, J. W., Bolin, J. N., Vuong, A. M*., <strong>Moudouni, D. M.</strong>, Begaye, D., Huber, J. C, Ory, M. G., &amp; Forjuoh, S. N. (2013). Factors associated with successful completion of the Chronic Disease Self-Management Program by adults with type 2 diabetes. <em>Family and Community Health</em>, <em>36</em>(2), 1-11. <a href="https://doi.org/10.1097/FCH.0b013e318282b3d1" rel="noopener" target="_blank">https://doi.org/10.1097/FCH.0b013e318282b3d1</a></p>
+<p>10. Phillips, C. D., Nwaiwu, O*., <strong>McMaughan Moudouni, D. K.</strong>, Edwards, R*., &amp; Lin, S*. H. (2013). When concealed handgun licensees break bad: Criminal convictions of concealed handgun licensees in Texas, 2001-2009. <em>American Journal of Public Health</em>, <em>103</em>(1), 86–91. <a href="https://doi.org/10.2105/AJPH.2012.300807" rel="noopener" target="_blank">https://doi.org/10.2105/AJPH.2012.300807</a></p>
+<p class="highlight">Research highlighted: Washington Post. <a href="https://www.washingtonpost.com/news/wonk/wp/2017/10/19/3-million-americans-carry-loaded-handguns-with-them-every-single-day-study-finds/" rel="noopener" target="_blank">3 million Americans carry loaded handguns with them every single day, study finds - The Washington Post</a></p>
+<p>9<strong>. McMaughan, D. K.,</strong> Edwards, R<sup>*</sup>. &amp; Kash, B. (2013). The Methusian catastrophe.</p>
+<p><em>Primary Health Care, 3</em>(1), 135. <a href="https://doi.org/10.4172/2167-1079.1000135" rel="noopener" target="_blank">https://doi.org/10.4172/2167-1079.1000135</a></p>
+<p>8. Vuong, A. M*., Huber, J. C., Forjuoh, S. N., Ory, M. G., <strong>Moudouni, D.,</strong> Helduser, J., Begaye, D., Bonner, T., &amp; Bolin, J. N. (2012). Factors affecting acceptability and usability of technological approaches to diabetes self-management: A case study. <em>Diabetes Technology &amp; Therapeutics, 14</em>(12). <a href="https://doi.org/10.1089/dia.2012.0139" rel="noopener" target="_blank">https://doi.org/10.1089/dia.2012.0139</a></p>
+<p>7. Phillips, C. D., Adepoju, L., Stone, N., <strong>Moudouni, D</strong>., Frentzel, E., Zhoa, H., Mehr, D., Nwaiwu, O, &amp; Garfinkel, S. (2012). Asymptomatic bacteriuria and antibiotics in nursing homes: An exploratory study in four homes. BMJ Geriatrics, 12(1), 73. <a href="https://doi.org/10.1097/FCH.0b013e318282b3d1" rel="noopener" target="_blank">https://doi.org/10.1097/FCH.0b013e318282b3d1</a></p>
+<p>6<strong>. Moudouni, D.</strong>, Ohsfeldt, R., Miller, T., &amp; Phillips, C. D. (2012) The relationship between formal and informal care among adult Medicaid personal care services recipients. <em>Health Services Research, 47</em>(4), 1642-1659. <a href="https://doi.org/10.1111/j.1475-6773.2012.01381.x" rel="noopener" target="_blank">https://doi.org/10.1111/j.1475-6773.2012.01381.x</a></p>
+<p>Research Highlighted: Economics and Ageing: Volume II: Policy and Applied Research</p>
+<p>5. Hawes, C., <strong>Moudouni, D. K.,</strong> Edwards, R.*, &amp; Phillips, C. D. (2012). Nursing homes and the Affordable Care Act: A cease fire in the ongoing struggle over quality reform. <em>Journal of Aging and Social Policy</em>, <em>24</em>(2), 206-220. <a href="https://doi.org/10.1080/08959420.2012.660046" rel="noopener" target="_blank">https://doi.org/10.1080/08959420.2012.660046</a></p>
+<p>4. Phillips, C. D., Patnaik, A., <strong>Moudouni, D.</strong>, Naiser, E., Dyer, J. A., Hawes, C., Fournier, C. J., Miller, T. R. &amp; Elliot, T. R. (2012). Summarizing activity limitations in children with chronic illnesses living in the community: A measurement study of scales using supplemented interRAI suit items. <em>BMC Health Services Research, 12</em>, Article 19. <a href="https://doi.org/10.1186/1472-6963-12-19" rel="noopener" target="_blank">https://doi.org/10.1186/1472-6963-12-19</a></p>
+<p>3. Ahn, S., Hochhalter, A. K., <strong>Moudouni, D.</strong>, Smith, M. L., &amp; Ory, M. (2012).</p>
+<p>Self-reported physical and mental health of older adults: The roles of caregiving and resources. <em>Maturitas, 71</em>(1)<em>,</em> 62-69. <a href="https://doi.org/10.1016/j.maturitas.2011.10.011" rel="noopener" target="_blank">https://doi.org/10.1016/j.maturitas.2011.10.011</a></p>
+<p>2. Elliot, T. R., Phillips, C. D., Patnaik, A., Naiser, E., Booth, E. A., Fournier, C. J., Miller,</p>
+<p>T. R., <strong>Moudouni, D. M.</strong>, Hawes, C., &amp; Dyer, J.A. (2011). Medicaid personal care services and caregivers’ reports of children’s health: The dynamics of a relationship. <em>Health Services Research, 46</em>(6), 1803-1821.</p>
+<p><a href="https://doi.org/10.1111/j.1475-6773.2011.01284.x" rel="noopener" target="_blank">https://doi.org/10.1111/j.1475-6773.2011.01284.x</a></p>
+
+<ol type="1">
+<li>
+<p>Patnaik, A., Elliott, T. R., <strong>Moudouni, D. M.</strong>, Fournier, C. J., Naiser, E., Miller, T. R., Dyer, J. A., Hawes, C., &amp; Phillips, C. D. (2011). Severity of children’s intellectual disabilities and Medicaid personal care services. <em>Rehabilitation Psychology</em>, <em>56</em>(4), 383-390. <a href="https://doi.org/10.1037/a0025619" rel="noopener" target="_blank">https://doi.org/10.1037/a0025619</a></p>
+</li>
+</ol>
+<h2 id="publications-submitted-and-under-review">Publications Submitted and Under Review</h2>
+<ol start="2" type="1">
+<li>
+<p>Parker, E.*, Abel, E., Silwal, A., Lee, T.*, Roy, E.*, Mulcahy, A., &amp; <strong>McMaughan, DJ</strong>+. (2026). Delivering bad news in Oklahoma: Exploring the systemic inequities that contribute to severe maternal morbidity. <em>Health Equity</em>. (revise and resubmit)</p>
+</li>
+</ol>
+<ol type="1">
+<li>
+<p><strong>McMaughan, DJ</strong>, Parker, E.*, Schmidt, E., Abel, E., Mulcahy, A., &amp; McGehee, A. L.* (2026). Social inclusion and structural barriers, not identity, drive quality of life differences among neurodivergent 2SLGBTQ+ disabled adults: A cross-sectional analysis of the National Survey on Health and Disability. <em>Disability and Health Journal</em>. (revise and resubmit)</p>
+</li>
+</ol>
+<h2 id="edited-book-volumes">Edited Book Volumes</h2>
+<ol type="1">
+<li>
+<p>Knutson, D<strong>.</strong>, <strong>McMaughan, DJ</strong>, Goldbach, C., Milton, C., &amp; Streed, C. (Eds.). (in press). <em>LGBTQ+ Rural Health: Disparities, Opportunities, and Emerging Research</em>. Cambridge University Press.</p>
+</li>
+</ol>
+<h2 id="book-chapters">Book Chapters</h2>
+
+<p>8. <strong>McMaughan, DJ</strong>, Parker, E.<sup>*</sup>, &amp; Mulcahy, A. (in press). Disability and neurodivergence in rural America: Barriers, strengths, and pathways to improving mental health care. In D. Knutson &amp; T. Kilwein (Eds.), <em>Bridging the gap: Addressing mental healthcare disparities in rural special populations.</em> Cambridge University Press.</p>
+<p>7. McGehee, A.*, Mulcahy, A., Jordan, P.^, &amp; <strong>McMaughan, DJ</strong>. (in press). Lesbian people in rural and remote areas. In D. Knutson, DJ McMaughan, C. Goldbach, C. Milton, &amp; C. Streed Jr. (Eds.), <em>LGBTQ+ rural health: Disparities, opportunities, and emerging research</em>. Cambridge University Press.</p>
+<p>6. <strong>McMaughan, D.</strong>, DeSalvo, D., &amp; Creel, L.<sup>*</sup> (2015). Maternal and child health in rural United States: Updates and challenges. In: Bolin, J. N., Bellamy, G., Ferdinand, A. O., et al. (Eds.), <em>Rural Healthy People 2020</em>. (Vol. 1, pp. 119-125). Texas A&amp;M University Health Science Center, School of Public Health, Southwest Rural Health Research Center.</p>
+<p>5. Ferdinand, A. O., Madkins, J., <strong>McMaughan, D.</strong>, &amp; Schulze, A. (2015). Mental health and mental disorders: A rural challenge. In: Bolin, J. N, Bellamy, G., Ferdinand, A. O., et al. (Eds.), <em>Rural Healthy People 2020.</em> (Vol. 1, pp. 55-72). Texas A&amp;M University Health Science Center, School of Public Health, Southwest Rural Health Research Center.</p>
+<p>4. Kash, B. A., <strong>McMaughan, D.</strong>, Hutchison, L., &amp; Tan, D.<sup>*</sup> (2015). Substance abuse trends in rural America. In: Bolin, J. N, Bellamy, G., Ferdinand, A. O., et al. (Eds.), <em>Rural Healthy People 2020.</em> (Vol. 1, pp. 73-82). Texas A&amp;M University Health Science Center, School of Public Health, Southwest Rural Health Research Center.</p>
+<p>3. <strong>McMaughan, D</strong>., Hugill-Warren, L., &amp; Pavao, C. A. O. (2015). Sexual health and family planning in rural United States: Updates and challenges. In: Bolin J. N, Bellamy, G., Ferdinand, A. O., et al. (Eds.) <em>Rural Healthy People 2020</em>. (Vol. 2, pp. 75-85). Texas A&amp;M University Health Science Center, School of Public Health, Southwest Rural Health Research Center.</p>
+<p>2. <strong>McMaughan, D.,</strong> &amp; Lin, S. (2015). Injury and violence prevention in rural America. In: Bolin J. N, Bellamy, G., Ferdinand, A. O., et al. (Eds.) <em>Rural Healthy People 2020</em>. (Vol. 2, pp. 87-94). Texas A&amp;M University Health Science Center, School of Public Health, Southwest Rural Health Research Center.</p>
+<p>1. Hawes, C., Phillips, C. D., &amp; <strong>Moudouni, D. M</strong>.(2012). Nursing homes. In: Carswell, A. (Ed.) <em>The Encyclopedia of Housing,</em> (2nd Ed.) Sage.</p>
+
+<h2 id="published-reports">Published Reports</h2>
+
+<p>7. <strong>McMaughan, D.,</strong> Naiser, E., Ozmetin, J., Beverly, J., Brog, J., &amp; Lin, S. (2019). <em>The Texas Transitions Toolkit: Final report.</em> Submitted by Texas A&amp;M University School of Public Health to the Texas Department of State Health Services.</p>
+<p>6. <strong>McMaughan, D.</strong>, Naiser, E., Baker, C., Ozmetin, J., &amp; Lin, S. (2017). <em>Optimizing the STAR Kids Screening and Assessment Instrument (SK-SAI): Final report</em>. Submitted by Texas A&amp;M University School of Public Health to the Texas Health and Human Services Commission.</p>
+<p>5. <strong>McMaughan, D</strong>., Naiser, E., Elliot, T., Fournier, C., Ozmetin, J., Lin, S., &amp; Hugill-Warren, L. (2016) <em>The STAR Kids Screening and Assessment Instrument</em></p>
+<p><em>(SK-SAI) Final report</em>. Submitted by Texas A&amp;M University School of Public Health to the Texas Health and Human Services Commission.</p>
+<p>4. Frentzel, E., <strong>McMaughan, D.</strong>, Mangrum, R., Guo, J., Cowans, T., Mitchell, D., &amp; Lucado, J. (2016). <em>Nursing home antimicrobial stewardship tools and guide project.</em> (Prepared under Contract No. HHSA290201000018I, Task Order #2.) AHRQ Publication No. 00-0000. Agency for Healthcare Research and Quality.</p>
+<p>3. Armstrong, T., Brossart, D., Creel, L., Du, Y., Ghaffari, A., Gregory, S. T., Helduser, J., Kum, H. C., <strong>McMaughan, D.</strong>, Ohsfeldt, R., Olutola, O., Pennel, C., Tamayo, L., Wells,</p>
+<p>R. &amp; Zhao, H. (2014). <em>DSRIP funded patient care navigation to reduce ED use: Report to participating sites.</em> Strategic Decision Support, Texas Health and Human Services Commission.</p>
+<p>2. Frentzel, E., <strong>Moudouni, D</strong>., Garfinkel, S., Phillips, C., Zhao, H., &amp; Fuchs, S. (2012). <em>Standardizing antibiotic use in long-term care settings (SAUL Study): Final report.</em> (Contract HHSA 290-2006-000-191-8.) Submitted by American Institutes for Research, Texas A&amp;M University School of Rural Public Health, and TMF Health Quality Institute. Report prepared for the Agency for Healthcare Research and Quality.</p>
+
+<ol type="1">
+<li>
+<p>Miller, T. R., Patnaik, A., Dyer, J., Fournier, C., Elliott, T., Naiser, E. <strong>Moudouni, D. M</strong>., &amp; Phillips, C. D. (2011). <em>Medicaid expenditures for children in Texas receiving Medicaid personal care services, September 2008-August 2010</em>. Report to the Texas Health and Human Services Commission (THHS).</p>
+</li>
+</ol>
+<h2 id="policy-briefs">Policy Briefs</h2>
+<ol type="1">
+<li>
+<p><strong>McMaughan, D</strong>., Anikpo, I. O.<sup>*</sup>, Horel, S., &amp; Ozmetin, J. (2020). <em>Post acute skilled nursing care availability in rural United States</em>. Policy Brief. Southwest Rural Health Research Center. <a href="https://srhrc.tamhsc.edu/docs/swing-bed-july-2020.pdf" rel="noopener" target="_blank">https://srhrc.tamhsc.edu/docs/swing-bed-july-2020.pdf</a></p>
+</li>
+<li>
+<p><strong>McMaughan, D.</strong>, Lin, S. &amp; Ozmetin, J. (2019). <em>Experiences in the Texas Star Kids Medicaid managed care program: a brief look at the early implementation process.</em> Policy Brief. Program on Disability Research and Community Based Care.</p>
+</li>
+</ol>
+<h2 id="published-peer-reviewed-conference-abstracts">Published, Peer-Reviewed Conference Abstracts</h2>
+
+<p>47. <strong>McMaughan, DJ,</strong> Parker, E<sup>*</sup>., Mulcahy, A., John, M.<sup>*</sup> &amp; Streed, C (November 2, 2026).The gap between access and inclusion: Community participation, discrimination, and resilience as predictors of loneliness among LGBTQ+ disabled adults. [Conference presentation abstract]. American Public Health Association Annual Meeting and Exposition, San Antonio, TX, United States.</p>
+<p>46. Abel, E., Parker, E<sup>*</sup>., Silwal, A., &amp; <strong>McMaughan, DJ.</strong> (November 2, 2026).Too many sheep, not enough sleep: Higher rates of short sleep among adults with cognitive impairment. [Conference presentation abstract]. American Public Health Association Annual Meeting and Exposition, San Antonio, TX, United States.</p>
+<p>44. <strong>McMaughan, DJ</strong>, Parker, E<sup>*</sup>., Mulcahy, A., &amp; Streed, C. (November 2, 2026). Intersecting margins, unequal housing: Housing inequities among disabled adults with marginalized sexual and gender identities from the 2025 National Survey on Health and Disability. [Conference presentation abstract]. American Public Health Association Annual Meeting and Exposition, San Antonio, TX, United States.</p>
+<p>43. Parker, E*, Roy, E*., Lee, T*., Abel, E., McGehee, A., Mulcahy, A., &amp; <strong>McMaughan, DJ.</strong> (2025, November 2-5). Policy vs. patients: Unpacking the public health impact of Medicaid cuts in Oklahoma. [Conference presentation abstract.] American Public Health Association Annual Meeting and Exposition, Washington D. C., United States.</p>
+<p>42. Silwal, A., Snyder, B*., Panta, P., Haider, M. R., &amp; <strong>McMaughan, DJ</strong> (2025, Nov. 2). <em>Silent struggles: examining suicide risk among international students.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Washington DC, United States.</p>
+<p>41. Parker, E<sup>*.</sup>, McGehee, A<sup>*</sup>., Noreen, D.<sup>^</sup>, Criss, M., Mulcahy, A., Abel, E., &amp; <strong>McMaughan, DJ</strong> (2025, Nov. 2). <em>Centering autistic voices: A community-based approach to understanding meaningful social inclusion.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Washington DC, United States.</p>
+<p>40. McGehee, A*., Mulcahy, A., Parker, E., Abel, E., &amp; <strong>McMaughan, DJ</strong> (2025, Nov. 2). <em>Disability, identity, and policy: A family impact policy analysis of gender-affirming care bans on family systems.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Washington DC, United States.</p>
+<p>39. Parker, E.<sup>*</sup>, Mulcahy, A., &amp; <strong>McMaughan, DJ</strong> (2025, Nov. 4). <em>Mattering and loneliness as predictors of quality of life at the intersection of 2SLGBTQ+ identities and disability.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Washington DC, United States.</p>
+<p>38. Parker, E.<sup>*</sup>, McGehee, A.<sup>*</sup>, Noreen, D.<sup>^</sup>, Moore, H.<sup>*</sup>, Criss, M. &amp; <strong>McMaughan, DJ</strong> (2025, Nov. 2). <em>Promoting mental well-being through social inclusion: A community-led pilot study exploring the impact of social inclusion on mental well-being among autistic people.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Washington DC, United States.</p>
+<p>37. <strong>McMaughan, DJ</strong>, Parker, E*., McGehee, A*., Knutson, D., Imanpour, S., Noreen, D.<sup>^</sup>, Lee*, T., Mulcahy, A., &amp; Abel, E. (2025, Nov. 2). <em>Navigating instability: housing instability, well-being, and intersectionality among disabled people.</em> [Conference</p>
+<p>presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Washington DC, United States.</p>
+<p>36. McGehee, A*., Parker, E*., Mulcahy, A., &amp; <strong>McMaughan, DJ</strong>. (2024, October 29). <em>Social drivers of health at the intersection of 2SLGBTQ+ and disabled identities: Exploring disparities and promoting equity.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Minneapolis, MN, United States.</p>
+<p>35. Parker, E*., Lewis, C*., McGehee, A*., Criss, M., Fullove II, R., Noreen, D.<sup>^</sup>, Bingham-Brunner, H*., Hann, G*., Naden, R.<sup>^</sup>, Pyle, L. J.<sup>^</sup>, Waller, A.<sup>^</sup>, &amp; <strong>McMaughan, DJ</strong> (2024, October 29). <em>“Autistic people being part of autism research is important to me”: Centering autistic people in formative research.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Minneapolis, MN, United States.</p>
+<p>34. <strong>McMaughan, DJ</strong>, McGehee, A*., Parker, E*., Mulcahy, A., &amp; Knutson, D. (2024, October 27). <em>The adults are not OK! The mental health disparities and unmet mental health care needs of disabled adults with ADHD</em>. [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Minneapolis, MN, United States.</p>
+<p>33. <strong>McMaughan, DJ</strong>, Schmidt, E., Fisher, K., Mulcahy, A., McGehee, A.<sup>*</sup>, Streed, C., Wallish, A., Batza, K., &amp; Hall, J. (2023, November 12-15). <em>Social inclusion and quality of life at the intersection of disability, neurodivergence, and LGBTQ2S+ identities</em>. [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Atlanta, GA, United States.</p>
+<p>32. Cowlbeck, M., <strong>McMaughan, DJ</strong>, Freudenthaler, T., Hart, E., &amp; Mansour, S. (2023, November 12-15). From challenges to opportunities: Process, outcomes, and lessons of mobilizing the OPHA Public Policy Committee. [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Atlanta, GA, United States.</p>
+<p>31. Mulcahy, A., Scmidt, E., Shinnick, K., <strong>McMaughan, DJ</strong>, Streed, C. G. Jr., Wallisch,</p>
+<p>A. M., Batza, K., Kurth, N., &amp; Hall, J. P. (2023, November 12-15). <em>Discrimination &amp; unmet need among disabled adults in the United States.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Atlanta, GA, United States.</p>
+<p>30. McGehee, A*., Mulcahy A., Parker, E.*, &amp; <strong>McMaughan, DJ<sup>+</sup></strong>. (2023, November 12-15). <em>Access to gender affirming care and preemptive policy: A family impact policy analysis and state case study.</em> [Conference presentation abstract]. American Public</p>
+<p>Health Association (APHA) Annual Meeting and Exposition, Atlanta, GA, United States.</p>
+<p>29. Calhoun, K., Hawa, R., Tumilty, E., DeDanzine, V., Key, K., Richmond, A., Akintobi, T., Nnaji, C., Abraczinskas, M., D'Alonzo, K., Chebli, P., Freeman, W., Glassman, N., Grieb, S., Habousha, R., Doll, C., Lechuga, C., Mancera-Cuevas, K., <strong>McMaughan, DJ</strong>, Palermo, A., Sprague Martinez, L., Wippold, G., &amp; Strelnick, H. (2023, November</p>
+<p>12-15). <em>Writing, dissemination and reviewer institute: Increasing community-patient authors, co-authors and reviewers.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Atlanta, GA, United States.</p>
+<p>28. Mulcahy, A., Batza, K., <strong>McMaughan, DJ,</strong> Kurth, N., &amp; Hall, J. (2022, November 6-9). <em>Concealment of disability, sexual or gender minority status from medical providers among disabled people: A qualitative analysis of the National Survey on Health and Disability.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Boston, MA, United States.</p>
+<p>27. Chen, X., <strong>McMaughan, DJ</strong>, Han, H., Rhoades, K., Davis, C*., Jones, R. A., Mahaffey, C. C., &amp; Miller, B. M. (2022, November 6-9). <em>Use and trust in COVID-19 information sources differed by health literacy among college students.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting and Exposition, Boston, MA, United States.</p>
+<p>26. <strong>McMaughan, DJ</strong>, Mulcahy, A., Imanpour, S., &amp; Davis, C<sup>*</sup>. (2021, October 21-27). <em>Psychiatric hospitalizations among autistic adolescents and emerging adults in community hospitals in the United States: An analysis of HCUP KID data, 2016.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting, Virtual and Denver, CO, United States.</p>
+<p>25. Mulcahy, A<sup>*</sup>., &amp; <strong>McMaughan, DJ</strong> (2021, October 21-27). <em>Prevalence of disability types among transgender adults.</em> [Conference presentation abstract]. American Public Health Association Annual Meeting (APHA), Virtual and Denver, CO, United States.</p>
+<p>24. Mulcahy, A<sup>*</sup>., Harvey, M., <strong>McMaughan, DJ,</strong> &amp; Kincl, L. (2021, October 21-27). <em>Transgender adults living with disabilities in the United States: Factors associated with healthcare utilization.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting, Virtual and Denver, CO, United States.</p>
+<p>23. Alonzo, J., Ozmetin, J., <strong>McMaughan, DJ</strong>, Zhong, L., Lee, S., Saldivar, I., &amp; Tomaszewski, L. (2021, October 21-27). <em>Leveraging innovation and telehealth to address hospital closure in rural Texas: a Moonshot initiative.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting, Virtual and Denver, CO, United States.</p>
+<p>22. Beverly, J. G*., &amp; <strong>McMaughan, DJ</strong> (2020, October 24-28). <em>Individuals with autism spectrum disorders and contact with law enforcement</em>. [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting, Virtual.</p>
+<p>21. Cheng, K. J*., <strong>McMaughan, DJ</strong>, &amp; Smith, M. L. (2020, November 4-7). <em>The mediating role of optimism on the relationship of activities of daily living and wellbeing among older adults.</em> [Conference presentation abstract]. The Gerontological Society of America Annual Meeting, Virtual.</p>
+<p>20. Beverly, J.*, &amp; <strong>McMaughan, D.</strong> (2018, November 10-14). <em>Green space distribution and people with disabilities: a GIS-based analysis of a metropolitan area in Texas</em>. [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting. San Diego, CA, United States.</p>
+<p>19. Zanwar, P., <strong>McMaughan, D.</strong>, &amp; Smith, M. L. (2018, November 14-18).</p>
+<p><em>Evidence-based cervical cancer screening practice patterns in diverse middle-aged and older female populations with and without any limitation.</em> [Conference presentation abstract]. The Gerontological Society of American Annual Meeting. Boston, MA, United States.</p>
+<p>18. <strong>McMaughan, D.,</strong> Ozmetin, J. P., Naiser, E., Fournier, C., &amp; Beverly, J.* (2018, November 10-14). <em>Modern almshouses: board and care homes in the United States. A scoping review.</em> [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. San Diego, CA, United States.</p>
+<p>17. Ojinnaka, C. O.*, Luo, W., Ory, M., <strong>McMaughan, D</strong>., Bolin, J. N., &amp; McClellan, D. (2016, October 29 - November 2). <em>Disparities in late-stage breast cancer diagnosis among older female residents of Texas: does travel distance to primary care providers matter?</em> [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Denver, CO, United States.</p>
+<p>16. Mangrum, R., Frentzel, E., Cowens, T., Kilany, M., Guo, J., <strong>McMaughan, D.</strong>, Mitchell, D., Barber, D., &amp; Perfetto, D. (2016, October 29 - November 2). <em>Evaluation of the guide to nursing home antibiotic stewardship.</em> [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Denver, CO, United States.</p>
+<p>15. <strong>McMaughan, D.</strong>, Naiser, E.*, Elliot, T. E., Fournier, C., &amp; Ozmetin, J. (2016, October 29 - November 2). <em>Framing the front door: Creating, testing, and implementing the STAR-Kids Screening and Assessment Instrument for Texas Medicaid Managed Care.</em> [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Denver, CO, United States.</p>
+<p>14. <strong>McMaughan, D.</strong>, Ozmetin, J., Borel, D., &amp; Bearden, C. (2016, October 29 - November 2). <em>Quality care at home: The role of wages, tenure, and benefits for the home health worker.</em> [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Denver, CO, United States.</p>
+<p>13. Naiser, E.*, <strong>McMaughan, D</strong>., Hugill-Warren, L., &amp; Lin, S. (2015, October</p>
+<p>21-November 4). <em>Challenges faced by different types of adults caring for children with special health care needs</em> [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Chicago, IL, United States.</p>
+<p>12. Lin, S*., Adepoju, O*., <strong>McMaughan, D</strong>., &amp; Ohsfeldt, R. (2015, October</p>
+<p>21-November 4). <em>Effects of sensory difficulties on healthcare expenditure among community-dwelling older adults.</em> [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Chicago, IL, United States.</p>
+<p>11. <strong>McMaughan, D.,</strong> Naiser, E.*, Hugill-Warren, L., Lin, S*., &amp; Elliot, T.E. (2015, October 21-November 4). <em>Children with special health care needs: Prevalence of co-occurring intellectual and developmental disabilities and mental health conditions in children enrolled in Medicaid fee-for-service Personal Care Services (PCS) program in Texas</em>. [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Chicago, IL, United States.</p>
+<p>10. Wendel, M., Creel, L*., <strong>McMaughan, D.</strong>, Cummings, A., &amp; Roper-Coleman, S. (2015, October 21-November 4). <em>Transforming the healthcare system: Implementation strengths and challenges in Texas’ Healthcare Transformation and Quality Improvement Program 1115(a) Medicaid Waiver</em>. [Conference presentation abstract]. The American Public Health Association (APHA) Annual Meeting. Chicago, IL, United States.</p>
+<p>9. Nwaiwu, O.*, <strong>McMaughan, DJ</strong>, Edwards, R*., Lin, S*., &amp; Phillips, C. D. (2014, November 15-19). <em>Clostridium difficile in a population of hospital discharges: examining differences in patients admitted with or without the infection</em>. [Conference presentation abstract]. American Public Health Association (APHA) Annual Conference, New Orleans, LA, United States.</p>
+<p>8. Edwards, R. B.*, Zhang, Y., &amp; <strong>McMaughan, D.</strong> (2013, November 20-24). <em>Addressing the growing need for dementia care: Special care units in residential care and assisted living facilities</em>. [Conference presentation abstract]. Gerontological Society of America Annual Research Meeting, New Orleans, LA, United States.</p>
+<p>7. Phillips, C. D., Frentzel, E., <strong>Moudouni, D</strong>., Zhoa, H., Mehr, D., Nwaiwu, O.*, &amp; Garfinkel, S. (2012, October 27-31). <em>Asymptomatic bacteriuria and antibiotic use in nursing homes.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Conference, San Francisco, CA, United States.</p>
+<p>6. <strong>Moudouni, D.,</strong> Phillips, C. D., Frentzel, E., Zhoa, H., Mehr, D., Nwaiwu, O.*, &amp; Garfinkel, S. (2012, November 14-16). <em>Standardized antibiotic use in long term care: The SAUL study.</em> [Conference presentation abstract]. The Gerontological Society Annual Meeting, San Diego, CA, United States.</p>
+<p>5. Patnaik, A., Naiser, E., Elliot, T. R., Fournier, C. J., <strong>Moudouni, D.</strong>, Dyer, J., Hawes, C., &amp; Phillips, C. D. (2012, October 27-31). <em>Infants and young children with special health care needs: Characteristics and PCS needs.</em> [Conference presentation abstract].</p>
+<p>American Public Health Association (APHA) Annual Conference, San Francisco, CA, United States.</p>
+<p>4. Helduser, J., Bolin, J. N., Ory, M. G., Forjuoh, S. N., Huber, J. C., <strong>Moudouni, D.</strong>, Gupta, M., &amp; Schimank, J. (2010, November 6-10). <em>Factors influencing successful completion of the chronic disease self-management program.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Conference, Denver, CO, United States.</p>
+<p>3. Bolin, J. N., Forjuoh, S. N., Ory, M. G., Huber, J. C., <strong>Moudouni, D.</strong>, Gupta, M., &amp; Helduser, J. (2010, November 6-10). <em>Are self-management factors associated with racial/ethnic disparities in HbA1c control?</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Conference, Denver, CO, United States</p>
+<p>2. <strong>McMaughan, D.</strong>, Ohsfeldt, R., &amp; Phillips, C. P. (2008, November 15-18).<em>The relationship between formal and informal care in Medicaid home health care recipients.</em> [Conference presentation abstract]. Gerontological Society Association Annual Meeting, National Harbor, MD, United States.</p>
+<p>1. <strong>Moudouni, D.</strong> (2008, October 25-29). <em>Correlates of fall-related mortality in US older adults.</em> [Conference presentation abstract]. American Public Health Association (APHA) Annual Meeting, San Diego, CA, United States.</p>
+<p>Selected as one of 17 posters from across the country to take place in the Delta Omega National Honorary Society in Public Health portion of the research poster presentations at the American Public Health Association annual meeting.</p>
+
+<h2 id="peer-reviewed-presentations">Peer-Reviewed Presentations</h2>
+
+<p>41. Cruz, C*., &amp; <strong>McMaughan, DJ</strong> (2025, September 15-16). <em>Unstable housing, unequal health: Exploring housing instability among individuals with disabilities</em>. [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Conference, Edmond, OK, United States.</p>
+<p>40. Parker, E.<sup>*</sup>, Roy, E.<sup>*</sup>, Lee, T.<sup>*</sup>, Abel, E., Mulcahy, A., McGehee, A.<sup>*</sup>, &amp; <strong>McMaughan, DJ</strong> (2025, September 15-16). <em>Medicaid enrollment as a predictor for experiencing severe maternal morbidity in Oklahoma</em> [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Conference, Edmond, OK, United States.</p>
+<p>39. Moore, H.*, Winkler, S.*, &amp; McMaughan, DJ (2025, September 15-16). A statewide analysis of mental health related hospitalizations among adolescents and emerging adults in Oklahoma [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Conference, Edmond, OK, United States.</p>
+<p>38. Parker, E.<sup>*</sup>, Roy, E.<sup>*</sup>, Lee, T.<sup>*</sup>, Abel, E., Mulcahy, A., McGehee, A.<sup>*</sup>, &amp; <strong>McMaughan, DJ</strong> (2025, September 15-16). <em>Delivering bad news: Health disparities in experiencing severe maternal morbidity in Oklahoma</em> [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Conference, Edmond, OK, United States.</p>
+<p>37. Weichold, B.*, Rhoads, K., &amp; <strong>McMaughan, DJ</strong> (2024, November 8-9). <em>A closer look: Faculty sexual misconduct and graduate student survivors</em> [Poster Session]<em>.</em> Oklahoma Public Health Association (OPHA) Annual Conference, Broken Arrow, OK, United States.</p>
+<p>36. Moore, H*., Winkler, S*., Jones, R., &amp; <strong>McMaughan, DJ</strong> (2024, November 8-9). <em>Impact of financial tradeoffs among college students in Oklahoma: A cross-sectional study of survey data</em> [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Conference, Broken Arrow, OK, United States.</p>
+<p>35. Parker, E*., McGehee, A*., Moore, H*., Noreen, D<sup>^</sup>., &amp; <strong>McMaughan, DJ</strong> (2024, November 8-9). <em>“These felt like neurotypical measures of socializing”: How autistic culture is missing from measures of social inclusion</em> [Poster Session]<em>.</em> Oklahoma Public Health Association (OPHA) Annual Conference, Broken Arrow, OK, United States.</p>
+<p>34. <strong>McMaughan, DJ</strong>, Knutson, D., Parker, E.*, &amp; Jensen, S.* (2024, November 8-9). <em>Community resilience during a crisis: Rural and urban differences in COVID-19 and mental health related hospitalizations in Oklahoma</em> [Poster Session]<em>.</em> Oklahoma Public Health Association (OPHA) Annual Conference, Broken Arrow, OK, United States.</p>
+<p>33. Mulcahy, A., Scmidt, E., Shinnick, K., <strong>McMaughan, DJ</strong>, Streed, C. G. Jr., Wallisch,</p>
+<p>A. M., Batza, K., Kurth, N., &amp; Hall J. P. (2023, October 16-17). <em>Discrimination &amp; unmet need: Findings from the 2022 National Survey on Health &amp; Disability</em> [Conference Session]. Oregon Public Health Association (OPHA) Annual Meeting and Conference, Corvallis, OR, United States.</p>
+<p>32. McMaughan, DJ, Freudenthaler, T., Parker, E.*, Mulcahy, A., McGehee, A.*, &amp; Imanpour, S. (2023, September 24-25). Inpatient hospital admissions in Oklahoma in 2019 [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Conference, Oklahoma City, OK, United States.</p>
+<p>31. McMaughan, DJ, Freudenthaler, T., Parker, E*., Mulcahy, A., McGehee, A*., &amp; Imanpour, S. (2023, September 24-25). Community resources, context, and preventable hospital inpatient stays related to autism in Oklahoma, 2019 [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Conference, Oklahoma City, OK, United States.</p>
+<p>30. Araiti, J*., Chen, X., &amp; <strong>McMaughan, DJ</strong> (2023, May 1). <em>How college students evaluate the quality of online health information: A qualitative study</em> [Poster Session]<em>.</em> Colloquium on Qualitative Health Sciences Research, Oklahoma City, OK, United States.</p>
+<p>29. Imanpour, S., &amp; <strong>McMaughan, DJ</strong>. (2023, June 24-27). <em>Immigrants’ reasons for bringing and using non-prescribed antibiotics</em> [Poster Session]<em>.</em> AcademyHealth Annual Research Meeting, Seattle, WA, United States.</p>
+<p>28. Mulcahy, A., <strong>McMaughan, DJ</strong>, Wallisch, A., Streed, C., Batza, K., Hall, J. P., &amp; Kurth, N. K. (2022, October 17-18). <em>From the 2019 National Survey on Health and Disability: Unmet healthcare needs for gender diverse adults with disabilities</em> [Poster Session]<em>.</em> Oregon Public Health Association (OPHA) Annual Meeting, Portland, OR, United States.</p>
+<p>27. <strong>McMaughan, DJ</strong>, Hernandez, C., &amp; Scott, E. (2022, September 28). <em>Blurring the lines: Intellectual and developmental disabilities and mental health</em> [Conference Session]<em>.</em> Zarrow Mental Health Symposium: Exploring Family Constructs, Virtual. Over 90 mental health and social support professionals in attendance.</p>
+<p>26. Mulcahy, A*., Harvey, M., <strong>McMaughan, DJ,</strong> &amp; Kincl, L. (2022, June 4-7). <em><a href="https://academyhealth.confex.com/academyhealth/2022arm/meetingapp.cgi/Paper/53646" rel="noopener" target="_blank">Transgender adults living with disabilities in the United States: Factors associated with healthcare utilization</a></em> [Poster Session]. AcademyHealth Annual Research Meeting, Washington DC, United States.</p>
+<p>25. <strong>McMaughan, DJ,</strong> &amp; Rahn, R. (2022, March 21-25). <em>Engaging Universal Design for Learning and critical disability theory in health education and promotion pedagogy</em> [Conference Session]<em>.</em> Society for Public Health Education Annual Conference, Virtual.</p>
+<p>24. Mulcahy, A.*, &amp; <strong>McMaughan, DJ</strong> (2021, October 11-12). <em>Prevalence of disability types among transgender adults</em> [Poster Session]<em>.</em> Oregon Public Health Association (OPHA) Annual Meeting, Virtual.</p>
+<p>23. Davis, C<sup>*</sup>., <strong>McMaughan, DJ</strong>, Rhoades, K., Chen, X., Han, H., Jones, R. A., Mahaffey, C., &amp; Miller, B. (2021, September 21-22). <em>Understanding college students' intentions to follow COVID-19 precautions with the Theory of Planned Behavior</em> [Poster Session]. Oklahoma Public Health Association (OPHA) Annual Meeting, Virtual.</p>
+<p>22. Mulcahy, A*., Harvey, M., <strong>McMaughan, DJ</strong>, Kincl, L., &amp; Lee, J. (2020, October</p>
+<p>17-18). <em>Health care utilization among transgender adults living with disabilities</em> [Poster Session]<em>.</em> Oregon Public Health Association (OPHA) Annual Meeting, Virtual.</p>
+<p>21. Zhu, X., Lee, H., Lee, C., &amp; <strong>McMaughan, D</strong>. (2020, November 5-8). <em>Equities in healthy living: impacts of neighborhood walkability on healthy lifestyle and cost of living among affordable housing residents</em> [Poster Session]<em>.</em> Association of Collegiate Schools of Planning Annual Conference, Virtual.</p>
+<p>20. <strong>McMaughan, D.,</strong> Lin, S., Naiser, E.*, &amp; Ozmetin, J. (2020, June). <em>Lost in transition: health care transition tools for young adults with intellectual and developmental disabilities.</em> American Association of Intellectual and Developmental Disabilities Annual Conference, Pittsburg, PA, United States. [Conference canceled].</p>
+<p>19. <strong>McMaughan, D.,</strong> Naiser, E*., Lin, S., Beverly, J.*, Idoko, E.*, Ozmentin, J., &amp; Foster,</p>
+<p>M. (2020, March). <em>Care transitions for children and youth with disabilities</em>. Society for</p>
+<p>Disability Studies Annual Conference, Columbus, OH, United States. [Conference canceled].</p>
+<p>18<strong>. McMaughan, D.,</strong> &amp; Ozmetin, J. P. (2017, October 14-18). <em>Out of sight out of mind: Unlicensed board and care homes and vulnerable populations</em> [Conference Session]<em>.</em> Southwest Disability Conference, Albuquerque, NM, United States.</p>
+<p>17. <strong>McMaughan, D.,</strong> Beverly, J.<sup>*</sup>, &amp; Ozmetin, J. P. (2017, October 14-18). <em>Closing the wage gap: gender difference in pay for personal care attendants</em> [Poster Session]<em>.</em> Southwest Disability Conference, Albuquerque, NM, United States.</p>
+<p>16. <strong>McMaughan, D.,</strong> &amp; Ozmetin, J. (2016, October 12-16). <em>State-wide systems change for children and youth with special health care needs: The Texas STAR Kids Program</em> [Conference Session]<em>.</em> Southwest Disability Conference, Albuquerque, NM, United States.</p>
+<p>15. Beverly, J.<sup>*</sup>, &amp; <strong>McMaughan, D.</strong> (2016, October 12-16). <em>Supports utilized by military families of children with autism</em> [Conference Poster Session]<em>.</em> Southwest Disability Conference, Albuquerque, NM, United States.</p>
+<p>14. Hutchison, R., Lin, S., Pekarek, K. J., <strong>McMaughan, D.</strong>, Glenn, T., &amp; Zhong, L. (2016, October 23-26). <em>Improving chronic pain management through a new curriculum</em> [Poster Session]<em>.</em> Annual Meeting of the American College of Clinical Pharmacy, Hollywood, FL, United States.</p>
+<p>13. Ojinnaka, C. O.*, Luo, W., Ory, M. G., <strong>McMaughan, D</strong>., &amp; Bolin, J. (2016, June 27-28)<strong>.</strong> <em>Rural-urban disparities in stage at diagnosis of breast cancer among female residents of Texas: the place of other geographical characteristics</em> [Poster Session]<em>.</em> AcademyHealth Annual Research Meeting, Boston, MA, United States.</p>
+<p>12. Imanpour, S.<sup>*</sup>, Nwaiwu, O.,* &amp; <strong>McMaughan, D.</strong> (2016, June 27-28)<strong>.</strong> <em>Do we need to spend more time with a doctor in a visit to avoid taking unnecessary antibiotics?</em> [Poster Session]. AcademyHealth Annual Research Meeting, Boston, MA, United States.</p>
+<p>11. <strong>McMaughan, D.,</strong> Naiser, E.*, &amp; Lin, S. (2015, October 9-13). <em>Stakeholder experiences with the transition from FFS to MMC in Texas for children with special health care needs</em> [Conference Session]. Southwest Disability Conference, Albuquerque, NM, United States.</p>
+<p>10. Lin, S., Adepoju, O., DeSalvo, B., <strong>McMaughan, D</strong>., &amp; Phillips, C. D. (2015, June 14-15). <em>Changes in home health patient characteristics, focus on functional disability and services utilization: 2000 and 2007 National Home and Hospice Care Survey</em> [Poster Session]. AcademyHealth Annual Research Meeting, San Diego, CA, United States.</p>
+<p>9. Lin, S.*, DeSalvo, B., <strong>McMaughan</strong>, <strong>D.</strong>, Adepoju, O.*, &amp; Phillips, C. D. (2014,</p>
+<p>November 18-19). <em>The effects of psychological distress on the use of preventive health services by community-dwelling older adults</em> [Poster Session]<em>.</em> Texas Rural Health Association Conference, Fort Worth, TX, United States.</p>
+<p>8. Adepoju, O.*, Ohsfeldt, R., Phillips, C. D., Zhao, H., <strong>McMaughan, D.,</strong> Helduser, J., Forjuoh, S., &amp; Bolin, J. (2013, June 22-25). <em>Diabetes and workforce productivity: an assessment of diabetes-related productivity losses among Type II diabetes mellitus patients</em> [Poster Session]<em>.</em> AcademyHealth Annual Research Meeting, Baltimore, MD, United States.</p>
+<p>7. Lin, S. H., Adepoju, O. E.*, &amp; <strong>Moudouni, D.</strong> (2013, April 6). <em>Relationship between major depressive episodes and the use of cigarettes and illegal substance</em>s [Poster Session]. 18th Annual TAMHSC – College of Medicine Student Research Symposium, College Station, TX, United States.</p>
+<p>6. <strong>Moudouni, D.</strong>, Bolin, J., Adepoju, O. E.* et al. (2012, December 17-19). <em>Rural-urban differences in diabetes self-management patterns in Texas: how do these compare to a nationally representative sample?</em> [Conference Session]. Science of Eliminating Health Disparities Summit, National Harbor, MD, United States.</p>
+<p>5. Forjuoh, S., Bolin, J., Huber, J. C., Vuong*, A. M., <strong>Moudouni, D.</strong>, Adepoju*, O. E., et al. (2012, December 17-19). <em>Are there racial/ethnic disparities in diabetes outcomes? Findings from a randomized controlled trial</em> [Conference Session]<em>.</em> Science of Eliminating Health Disparities Summit, National Harbor, MD, United States.</p>
+<p>4. Bolin, J. N., Forjuoh, S. F., Huber, J. C., <strong>Moudouni, D.</strong>, Helduser, J. W., Gupta, M., Ory, M. (2010, April 13-16). <em>Self-management skills and racial/ethnic disparities in diabetes outcomes</em> [Conference Session]<em>.</em> CDC Diabetes Translation, Kansas City, MO, United States.</p>
+<p>3. Forjuoh, S., Bolin, J., Ory, M., Huber, J. C., <strong>Moudouni, D.</strong>, Gupta, M., Helduser, J. (2010, April 5-9). <em>P20 Project 2 update: Implementing and evaluating chronic disease self-management models to reduce health disparities in central Texas</em> [Conference Session]<em>.</em> 5th Annual School of Rural Public Health Research Week, College Station, TX, United States.</p>
+<p>2. <strong>Moudouni, D.</strong>, &amp; Kash, B.A. (2009, June 9-10). <em>Human &amp; organizational characteristics of high and low performing nursing homes: A comparative study using mixed methods</em> [Poster Session]. AcademyHealth Research Meeting, San Diego, CA, United States.</p>
+<p>1. <strong>Moudouni, D.,</strong> &amp; Boyer, G. P. (2007, April 3-7). <em>Psychotropic medication use in US nursing homes</em> [Poster Session]<em>.</em> TAMHSC SRPH Public Health Week Research Symposium, College Station, TX, United States.</p>
+
+<h2 id="oklahoma-state-university-undergraduate-research-symposium">Oklahoma State University Undergraduate Research Symposium</h2>
+
+<p>4. Ramirez, S. &amp; <strong>McMaughan, DJ</strong> (2026, July 23). <em>Social drivers of health, social constructs, and the use of prosthetic devices among people with limb deficiency</em>. [Poster Session]. Oklahoma State University Undergraduate Summer Research Symposium, Stillwater, OK, United States.</p>
+<p>3. Stevenson, L. &amp; <strong>McMaughan, DJ</strong> (2026, July 23). <em>The ABCs of academic accessibility: Accommodations, belongingness, and disclosure of disability</em>. [Poster Session]. Oklahoma State University Undergraduate Summer Research Symposium, Stillwater, OK, United States.</p>
+<p>2. Cruz, C., &amp; <strong>McMaughan, DJ</strong> (2025, July 24). <em>Unstable housing, unequal health: Exploring housing instability among individuals with disabilities</em>. [Poster Session]. Oklahoma State University Undergraduate Summer Research Symposium, Stillwater, OK, United States.</p>
+<p>1. Moore, H., Winkler, S., Jones, R., &amp; <strong>McMaughan, DJ</strong> (2025, April 12). <em>Impact of financial tradeoffs among college students in Oklahoma: A cross-sectional study of survey data</em> [Poster Session]. Oklahoma State University Undergraduate Spring Research Symposium, Stillwater, OK, United States.</p>
+
+<h2 id="invited-presentations">Invited Presentations</h2>
+
+<p>19. <strong>McMaughan, DJ</strong> (December 2, 2025). <em>Inclusive pedagogy and neurodiversity</em>. Department of English, College of Arts and Sciences, Oklahoma State University, Stillwater, OK, United States.</p>
+<p>18. <strong>McMaughan, DJ</strong> (November 19, 2025). <em>From idea to impact: demystifying academic publishing.</em> Academic Series. Oklahoma Public Health Association. Online. Oklahoma, United States.</p>
+<p>17. <strong>McMaughan, DJ</strong>. (September 19, 2025). <em>Leading differently: empowering neurodivergent leadership</em>. OSU LEAD Week. Oklahoma State University, Stillwater, OK, United States.</p>
+<p>16. <strong>McMaughan, DJ.</strong> (August 15, 2025). <em>Inclusive academic support: neurodiversity &amp; Universal Design.</em> LASSO Training Session. Oklahoma State University, Stillwater, OK, United States.</p>
+<p>15. Sanogo, A. &amp; <strong>McMaughan, DJ.</strong> (April 11, 2025) <em>Creating inclusive learning environments</em>. LAUNCH (FY 25 Cohort). College of Education and Human Sciences, Oklahoma State University, Stillwater, OK, United States.</p>
+<p>14. <strong>McMaughan, DJ.</strong> (April 8, 2025). <em>Leading differently: empowering neurodivergent leadership</em>. OSU LEAD Week. Oklahoma State University, Stillwater, OK, United States.</p>
+<p>13. <strong>McMaughan, DJ</strong>. (December 2, 2024). <em>Hospitalizations among autistic youth: Disparities, data, and systems change</em>. Ascension Illinois, Chicago, Illinois.</p>
+<p>Audience: healthcare providers and social workers. Provided CEUs for Ascension staff. 84 in attendance</p>
+<p>12. <strong>McMaughan, DJ.</strong> (October 1, 2024). <em>Neurodivergent leadership. A neurodiversity focused approach for developing strategies for success.</em> OSU LEAD Week. Oklahoma State University, Stillwater, OK, United States.</p>
+<p>11. <strong>McMaughan, DJ.</strong>, Mulcahy, A., &amp; Streed, C. (June 28, 2024). <em>Health and wellbeing at the intersection of disability, neurodivergence and sexual/gender diversity.</em> The Max Delbrück Center for Molecular Medicine (MDC), Berlin, Germany.</p>
+<p>10. <strong>McMaughan, DJ.,</strong> &amp; Cowlbeck, M.* (August 10, 2023). <em>Engaging students in affiliates.</em> American Public Health Association. Online.</p>
+<p>9. <strong>McMaughan, DJ.</strong> (June 12, 2023). <em>Spectrum of pride</em>. Autism Foundation of Oklahoma. Oklahoma City, OK, United States.</p>
+<p>8. <strong>McMaughan, DJ.</strong> (March 29th, 2023) <em>Gender diversity: beyond the binary</em>. Part of the webinar <em>Cultural awareness &amp; health equity among diverse populations</em> for the American Public Health Association Public Health Education and Health Promotion Section professional development series. Online. CEUs offered.</p>
+<p>7. <strong>McMaughan, DJ.</strong> (December 16th, 2022). <em>Disability justice in academia</em>. University of Oklahoma celebration of International Day of Persons with Disabilities. Norman, OK, United States.</p>
+<p>6. <strong>McMaughan, DJ.</strong> (February 8, 2020). <em>Children and youth with disabilities: community engagement in health services research.</em> Oregon State University College of Public Health and Human Sciences Research Seminar. Corvallis, OR, United States.</p>
+<p>5. <strong>McMaughan, DJ.</strong> (November 3, 2018). <em>Health research with vulnerable populations.</em> Public Policy Research Institute 35th Anniversary Conference. College Station, TX, United States.</p>
+<p>4. <strong>McMaughan, DJ.</strong> (June 6th, 2017). <em>Optimizing the STAR Kids Screening and Assessment Instrument.</em> Texas Health and Human Services Commission, Austin, TX, United States.</p>
+<p>3. <strong>McMaughan, DJ.</strong> (November 18, 2016). <em>Partnering to prevent catheter-associated urinary tract infections (CAUTI): It takes a village.</em> National Consumer Voice for Quality Long-Term Care Annual Conference, Arlington, VA, United States.</p>
+<p>2. <strong>McMaughan, DJ.</strong> (May 24, 2016). <em>Testing the SK-SAI.</em> The Texas Association for Home Care &amp; Hospice Spring Symposium, San Antonio, TX, United States.</p>
+
+<ol type="1">
+<li>
+<p><strong>McMaughan, DJ.</strong> (October 12, 2013). <em>Plenary: where is the quality in assisted living?</em></p>
+</li>
+</ol>
+
+<p>National Consumer Voice for Quality Long-Term Care Annual Conference, Arlington, VA, United States.</p>
+
+<h2 id="moderated-panels-and-presentations">Moderated Panels and Presentations</h2>
+<ol start="2" type="1">
+<li>
+<p><strong>McMaughan, DJ</strong> (September 25, 2023). <em>Public Health Partnerships and Community Collaborations</em>. [Panel discussion moderator]. Oklahoma Public Health Association Annual Conference, Oklahoma City, OK, United States.</p>
+</li>
+</ol>
+<ol type="1">
+<li>
+<p><strong>McMaughan, DJ</strong> (November 7, 2022). <em>Health promotion and disease prevention for people with disabilities.</em> [Panel discussion moderator]. American Public Health Association (APHA) Annual Meeting and Exposition, Boston, MA, United States.</p>
+</li>
+</ol>
+<h2 id="funded-projects">Funded Projects</h2>
+
+<p>Total: $18 million PI or Co-PI: $4 million Co-I: $14.1 million</p>
+<p><strong>Oklahoma State University President’s Faculty Fellows Research Award ($17,336).</strong></p>
+<p><em>Understanding the relationship between social drivers of health and housing instability among people with intellectual and developmental disabilities. (2025-2026)</em> Role: Principal Investigator</p>
+<p><strong>InSPIRE: College of Education and Human Sciences, Oklahoma State University ($87,000)</strong></p>
+<p><em>Centering Autistic Children and their Families in the Sleep Health Journey: Building an Inclusive Research Approach. (January 1, 2024 - December 31, 2024).</em></p>
+<p>Role: Co-Investigator PI: Emily Able</p>
+<p><strong>Oklahoma Center for the Advancement of Science &amp; Technology (OCAST) ($122,480)</strong></p>
+<p><em>Impact of social inclusion on mental wellbeing among autistic adolescents and emerging adults. (2023-2026).</em></p>
+<p>Role: Principal Investigator</p>
+<p><strong>Albert Schweitzer Fellowship ($6,500; direct funding and in-kind donations)</strong></p>
+<p><em>Albert Schweitzer Foundation (2023-2024)</em></p>
+<p>TRANSformation for Family Growth and Connection</p>
+<p>Project Description: Create evidence-based support programming for parents and caregivers of gender expansive youth.</p>
+<p>Role: Academic Mentor PI: Amy McGehee</p>
+<p><strong>WOSU Partnering to Impact ($6,000)</strong></p>
+<p><em>Partnering to Impact Student with Disabilities (2022-2023)</em></p>
+<p>Role: Principal Investigator</p>
+<p><strong>Blue Cross Blue Shield ($2,500,000)</strong></p>
+<p><em>Moonshot Project (2019-2023)</em></p>
+<p>Role: Co-Investigator</p>
+<p><strong>Texas A&amp;M University T3 Grant ($30,000)</strong></p>
+<p><em>Health Promotion through Green and Affordable Housing (2018-2020)</em></p>
+<p>Role: Co-Principal Investigator</p>
+<p><strong>Texas Department of State Health Services ($180,000)</strong></p>
+<p><em>Developing a Provider Tool to Improve Health Care Transition Outcomes Through the Promotion of Medical Homes for CSHCN</em> (2017-2019)</p>
+<p>Role: Principal Investigator</p>
+<p>The Texas Transitions Toolkit: <a href="http://www.texastransitiontoolkit.org/" rel="noopener" target="_blank">http://www.texastransitiontoolkit.org/</a></p>
+<p><strong>Health Resources and Services Administration Federal Office of Rural Health Policy ($2,800,000)</strong></p>
+<p><em>Post-Acute Skilled Nursing Care in the United States (2016-2020)</em></p>
+<p>Role: Principal Investigator [sub to Southwest Rural Health Research Center] $240,000</p>
+<p><strong>Texas State Health and Human Services Commission ($570,000)</strong></p>
+<p><em>Optimizing the SK-SAI</em> (2017-2018) Role: Principal Investigator</p>
+<p><strong>TAMU School of Public Health Delta Omega Research Enhancement and Development Initiative (REDI) grant ($25,000)</strong></p>
+<p><em>Unlicensed Board and Care Homes in Texas</em> (2016-2017) Role: Principal Investigator</p>
+<p><strong>Texas State Health and Human Services Commission ($1,757,243)</strong></p>
+<p><em>Developing the Texas STAR Kids Medicaid Managed Care Assessment for Children with Complex and Chronic Health Care Needs</em> (2014-2017)</p>
+<p>Role: Principal Investigator The SK-SAI:</p>
+<p><a href="https://hhs.texas.gov/sites/default/files/documents/services/health/medicaid-chip/programs/star-kids/sai-v-2-06.pdf" rel="noopener" target="_blank">https://hhs.texas.gov/sites/default/files/documents/services/health/medicaid-chip/programs/star-kids/sai-v-2-06.pdf</a></p>
+<p><strong>Agency for Healthcare Quality and Research ($206,000)</strong></p>
+<p><em>Accelerating Change and Transformation in Organizations and Networks (ACTION)</em></p>
+<p><em>Task Order</em></p>
+<p><em>#25: Nursing Home Antibiotic Stewardship Tools and Guide (2013-2016)</em></p>
+<p>Role: Principal Investigator for the Texas A&amp;M University sub-award $206,000 The Nursing Home Antibiotic Stewardship Guide: <a href="https://www.ahrq.gov/nhguide/index.html" rel="noopener" target="_blank">https://www.ahrq.gov/nhguide/index.html</a>.</p>
+<p><strong>Texas State Health and Human Services Commission ($3,128,628)</strong></p>
+<p><em>Evaluation of Texas’s Medicaid 1115 Waiver Regional Health Partnerships (2013-2014)</em></p>
+<p>Role: Co-Investigator</p>
+<p><strong>Agency for Healthcare Quality and Research ($1,378,000)</strong></p>
+<p><em>Preventing/Managing C. diff for Nursing Home Residents, Admissions &amp; Discharges (2010-2013).</em></p>
+<p>Role: Co-Investigator</p>
+<p><strong>Texas Health and Human Services Commission ($927,278)</strong></p>
+<p><em>Developing a Nursing Care Assessment Form for Children in the Medicaid EPSDT Program in Texas (2010-2012</em>).</p>
+<p>Role: Co-Primary Investigator</p>
+<p><strong>Texas Health and Human Services Commission ($1,375,000)</strong></p>
+<p><em>Developing a Comprehensive Assessment Form for Children Using Medicaid Personal Care Services (2007-2010)</em>.</p>
+<p>Role: Co-Investigator</p>
+<p>The Personal Care Assessment Form: <a href="http://pcaf.tamu.edu/pdf/pcaf_420_for_website.pdf" rel="noopener" target="_blank">http://pcaf.tamu.edu/pdf/pcaf_420_for_website.pdf</a></p>
+<p><strong>Agency for Healthcare Quality and Research ($386,000 subcontract)</strong> <em>Accelerating Change and Transformation in Organizations and Networks (ACTION) Task Order #15: Standardizing Antibiotic Use in Long-Term Care Settings (SAUL) (2009-2011)</em>.</p>
+<p>Role: Co-Investigator</p>
+<p>The Suspected Urinary Tract Infection (UTI) Situation, Background, Assessment, and Request (SBAR) Toolkit</p>
+<p><a href="https://www.ahrq.gov/nhguide/toolkits/determine-whether-to-treat/toolkit1-suspected-uti-sbar.html" rel="noopener" target="_blank">https://www.ahrq.gov/nhguide/toolkits/determine-whether-to-treat/toolkit1-suspected-uti-sbar.html</a></p>
+<p><strong>National Institute of Health ($6.1 million overall Center funding)</strong></p>
+<p><em>R01 Employing Diabetes Self-Management Models to Reduce Health Disparities in Texas (2007-2010)</em></p>
+<p>Role: Research Scientist</p>
+
+<h2 id="under-review-and-unfunded-proposals-since-2020">Under Review and Unfunded Proposals since 2020</h2>
+
+<p><strong>Spenser Foundation. ($74,892)</strong> <em>Centering Tribal Lifeways in BHE (2026).</em> Role: Co-Investigator</p>
+<p>PI: Dyke, E.</p>
+<p>Under Review</p>
+<p><strong>Rural Renewal Initiative.($90,000)</strong></p>
+<p><em>Expanding Healthcare Access in Rural Communities through Strategic Infrastructure Development and Innovative Educational Design Partnerships (2025)</em></p>
+<p>Role: Co-Investigator PI: Knutson, D.</p>
+<p>Unfunded</p>
+<p><strong>National Council for Mental Wellbeing. ($147,881)</strong></p>
+<p><em>Evaluation of Mental Health Workforce Accelerator Program (2025)</em></p>
+<p>Role: Co-Investigator PI: Knutson, D. Unfunded</p>
+<p><strong>National Institute on Disability, Independent Living, and Rehabilitation Research ($749,762)</strong></p>
+<p><em>Navigating Instability: Housing Instability, Health, and Wellbeing among People with Disabilities (2024)</em></p>
+<p>Role: Primary Investigator Unfunded</p>
+<p><strong>National Institute of Health. ($669,302)</strong></p>
+<p><em>Digital Mental Health Intervention to Reduce Suicide Risk in Rural Gender Minority Adults (2024)</em></p>
+<p>Role: Co-Investigator PI: Knutson, D. Unfunded</p>
+<p><strong>Oklahoma Shared Clinical &amp; Translational Resources, State. ($50,000).</strong> <em>Minority Stress, Unmet Healthcare Needs, and Substance Use among Sexual and Gender Minoritized Individuals. (2024)</em></p>
+<p>Role: Co-Investigator PI: Vogel, E.A. Unfunded</p>
+<p><strong>Autism Science Foundation Predoctoral Training Award ($35,000)</strong></p>
+<p><em>Trust Me, I’m a Therapist: Investigating the Role of Mistrust in Mental Health Service Utilization and Well-Being among Black Mothers of Autistic Children. (2023).</em></p>
+<p>Role: Faculty Mentor Unfunded</p>
+<p><strong>RWJF Policies for Action: Effects of State Preemption Policies on Racial Justice and Health Equity. ($275,000)</strong></p>
+<p><em>Oklahoma Health Equity and Racial Justice Policy Surveillance Project. (2023).</em></p>
+<p>Role: Co-PI</p>
+<p>PI: Cowlbeck, M Unfunded.</p>
+
+<h3 id="rwjf-research-in-transforming-health-and-healthcare-systems">RWJF Research in Transforming Health and Healthcare Systems</h3>
+
+<p><em>Leveraging Mobile Wellness Units Services to Promote Affordable Healthcare Services in Rural Oklahoma Communities. (2022).</em></p>
+<p>Role: Co-Investigator Unfunded.</p>
+<p><strong>Organization for Autism Research ($39,710)</strong><em>.</em></p>
+<p><em>Partnering to Impact Meaningful Social Inclusion for Autistic Adults. (2022).</em></p>
+<p>Role: Principal Investigator</p>
+<p>LOI submitted. Invited to submit a full proposal. Full proposal submitted. Unfunded.</p>
+
+<h3 id="rural-renewal">Rural Renewal</h3>
+
+<p><em>Leveraging service learning to co-develop a community-based health promotion program within a rural and persistently impoverished county. (2021).</em></p>
+<p>Role: Collaborator Unfunded.</p>
+<p><strong>Oklahoma Center for the Advancement of Science &amp; Technology (OCAST). ($122,480)</strong></p>
+<p><em>Addressing psychiatric hospitalizations among autistic adolescents and emerging adults: the role of social inclusion and community mental healthcare resources. (2021).</em> Role: Principal Investigator</p>
+<p>Approved for funding but below the funding line.</p>
+
+<h3 id="robert-wood-johnson-foundation-rwjf-policies-for-action-public-policy-research-to-advance-racial-equity-and-racial-justice">Robert Wood Johnson Foundation (RWJF) Policies for Action: Public Policy Research to Advance Racial Equity and Racial Justice</h3>
+
+<p><em>The impact of Healthy Texas Women and Healthy Texas Women plus programs on racial disparity in maternal mortality in Texas and policy recommendations. (2020).</em> Role: Co-Principal Investigator</p>
+<p>Unfunded.</p>
+<p><strong>Borchard Foundation Center on Law &amp; Aging Academic Research Grant Program</strong> <em>Identifying characteristics of and barriers to public policy addressing abuse, neglect and exploitation in board and care homes. (2020).</em></p>
+<p>Role: Principal Investigator Unfunded.</p>
+<p><strong>American Educational Research Association (AERA) ($5,000).</strong></p>
+<p><em>Exploring the impact of COVID-19 on land grant service-learning initiatives and disenfranchised communities in the United States. (2020).</em></p>
+<p>Role: Co-Principal Investigator Unfunded.</p>
+<p><strong>Women for OSU (WOSU). ($10,000).</strong></p>
+<p><em>Cowgirl Power: Training the next generation of health advocacy heroes. (2020).</em></p>
+<p>Role: Co-Investigator Unfunded.</p>
+
+<h2 id="keynotes">Keynotes</h2>
+
+<p><strong>McMaughan, DJ.</strong> (May 2019)<strong>.</strong> <em>Owning your health care narrative - you are your best advocate</em>. 8th Annual Women, Wealth &amp; Wisdom Workshop. College Station, TX. May 2019.</p>
+<p><strong>McMaughan, DJ.</strong> (Sept. 2019)<strong>.</strong> <em>Hallways and Health</em>. Architecture for Health 2019 Lecture Series.</p>
+
+<h2 id="media-appearances">Media Appearances</h2>
+
+<p>Nowhere to go: Inside the Texas boarding home system where abuse, neglect and exploitation are widespread (December 8, 2025).</p>
+<p><a href="https://inthesetimes.com/article/texas-boarding-homes-elderly-disability-justice-healthcare-investigation-nursing-neglect-abuse" rel="noopener" target="_blank">https://inthesetimes.com/article/texas-boarding-homes-elderly-disability-justice-healthcare-investigation-nursing-neglect-abuse</a></p>
+<p>'So disturbing': Inside the 'hell' of North Texas boarding homes (November 7, 2024). Investigative report for WFAA in Dallas. <strong><a href="https://www.wfaa.com/article/news/local/investigates/dallas-texas-boarding-homes-arlington-grand-prairie-investigation/287-9c79948d-bfce-4f78-9887-61151390d343" rel="noopener" target="_blank">https://www.wfaa.com/article/news/local/investigates/dallas-texas-boarding-homes-arlington-grand-prairie-investigation/287-9c79948d-bfce-4f78-9887-61151390d343</a></strong></p>
+<p>World News and Report (2018). “Turning science into society”. Interviewed and research highlighted.</p>
+
+<h2 id="courses">Courses</h2>
+
+<p><strong>Health Issues in Diverse Populations</strong> (HLTH 3113). Undergraduate course. Spring 2025.</p>
+<p><strong>Public Health Policy</strong> (HLTH 3343). Undergraduate course. Spring 2025.</p>
+<p><strong>Public Health Research and Policy for Equity and Inclusion</strong> (HLTH 6010). Graduate course. Spring 2023, Spring 2025.</p>
+<p><strong>Substance Use and Public Health</strong> (HLTH 3913). Undergraduate course. Every Spring and Fall 2020-Spring 2024.</p>
+<p><strong>Public Health and Aging (</strong>HLTH 4783). Undergraduate course. Every Fall 2020-2024</p>
+<p><strong>Understanding HIV</strong> (HLTH 3603). Undergraduate course. Winter intersession 2025, Summer 2021-Summer 2024</p>
+<p><strong>Health and Sexuality</strong> (HLTH 4322). Undergraduate course. Spring 2021 &amp; Spring 2024</p>
+<p><strong>Introduction to Public Health</strong> (HLTH 2133). Undergraduate course. Spring 2024. <strong>Health in Special Populations</strong>. (HLTH 3201). Undergraduate course. Fall 2023. <strong>Research in Historically Excluded Populations and Wellness</strong> (6010). Fall 2022 &amp; Fall 2023.</p>
+<p><strong>Data Science for Social Scientists</strong> (6010). Graduate course. Summer 2023 <strong>Introduction to Health Policy and Politics</strong> (PHPM 640) MPH required course. Every Spring 2012-2020.</p>
+<p><strong>Health Policy and Politics</strong> (PHPM 641) PhD required course for policy students in the Health Services Research Doctoral program. Every Fall 2012-2020.</p>
+<p><strong>EMHA Health Policy and Politics</strong> (EMHA 640) MHA required course for the Executive Master’s in Health Administration program. Every Summer 2016-2019.</p>
+
+<h2 id="student-advising">Student Advising</h2>
+<h3 id="doctoral-committee-chairadvisor">Doctoral Committee Chair/Advisor</h3>
+
+<p>9. Elliot Parker (in progress). Disparities among disabled sexual and gender minority community members in the United States. Public Health (PhD in Community Health Sciences). Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>8. Carianne Cornell. (in progress). Vaccine injury and maternal outcomes. Public Health (PhD in Community Health Sciences), Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>7. Amy Lee McGehee. (2026). Family systems in the context of restrictive health policy. Human Development and Family Sciences, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>6. Marqua Harris. (2026). The role of medical mistrust in a Black woman’s reproductive health experience. Public Health (PhD in Community Health Sciences), Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>5. Beth Weichold. (2025). Hiding in plain sight: faculty sexual misconduct in higher education. Public Health (PhD in Community Health Sciences), Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>4. Emily Naiser. (2021). Identifying solutions to issues of safety in home care environments. Department of Health Policy and Management (PhD in Health Services Research), Texas A&amp;M University, College Station, Texas.</p>
+<p>3. Rachel Edwards. (2016). Special care units in residential care and assisted living facilities. Department of Health Policy and Management, Texas A&amp;M University, College Station, Texas.</p>
+<p>2. Sara Imanpour. (2016). Antibiotic stewardship in the United States. Department of Health Policy and Management (PhD in Health Services Research), Texas A&amp;M University, College Station, Texas</p>
+<p>1. Szu-hsuan Lin (2015). Community-dwelling older adults: services, supports and changes. Department of Health Policy and Management (PhD in Health Services Research), Texas A&amp;M University, College Station, Texas.</p>
+
+<h3 id="doctoral-committee-member">Doctoral Committee Member</h3>
+
+<p>19. Candace Roberson. (in progress). Spanking, sibling relationships, and disordered eating. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>18. Jay De La Garza. (in progress). Bringing communal ways of knowing to the ivory tower: a liberationist intervention to reduce ableism. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>17. Mattie Reinhardt. (in progress). Feasibility and effectiveness of DBT for emerging adults in university-based integrated care: a pilot RCT. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>16, Laina Nelson (2026). Orthorexia nervosa and trauma in sport: an interpretive phenomenological analysis. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma</p>
+<p>15. Edan Nay. (2026). Stigma and mental health among LGBTQ+ Oklahomans. Sociology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>14. Kimmie Osborn (2025). Evaluating relationships between interpersonal comparison, trait competitiveness, and eating disorder outcomes among adults with and without eating disorders. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>13. Casey Lewis. (2025). Chronically ill autistic adults: a qualitative study of lived experiences. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>12. Bek Urban. (2025). Measuring disordered eating and body manipulation efforts in trans individuals: development of the trans disordered eating scale. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>11. Elaine Harris. (2025). Racial trauma connects us, but our melanin heals us: Black mental health professionals’ experiences in counseling Black clients. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>10. Jessica Santiago (2024). The interwoven experience of body image and racial cultural identity development among women of color. Counseling Psychology, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>9. Temi Olabiyi. (2024). Reformation of special education in Nigeria. School of Teaching, Learning, and Educational Sciences, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>8. Tia Waldrop. (2022). Meaning making and identity formation among young adults with intellectual disability: A relationship-based approach. Human Development and Family Science, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>7. Abigail Mulcahy (2021). Transgender adults living with disabilities: factors associated with health care utilization. Health Services Research, Oregon State University, Corvallis, Oregon.</p>
+<p>6. Christi Esquivel (2020). Analyzing the feasibility of an educational game to prevent teen pregnancy. Health and Kinesiology, Texas A&amp;M University, College Station, Texas.</p>
+<p>5. Lauren Long (2019). Resilience in the general factor of personality: understanding the role of positive affect, social support, and participation in distress related to chronic illness or disability. Counseling Psychology, Texas A&amp;M University, College Station, Texas.</p>
+<p>4. Alejandra Sequeira. (2017). Trauma-focused cognitive behavioral therapy for treating traumatized children in an underserved region: an outcome study. Counseling Psychology, Texas A&amp;M University, College Station, Texas.</p>
+<p>3. Benny Holland. (2016). Simulation technology utilized to measure personal protective equipment competency levels of certified nursing assistants in nursing homes. Department of Health Policy and Management, Texas A&amp;M University, College Station, Texas.</p>
+<p>2. Jim Fish. (2016). An examination of frequent emergency department use and emergency department reliance among oif/oef veterans. Department of Health Policy and Management, Texas A&amp;M University, College Station, Texas.</p>
+<p>1. Chinedum Ojinnaka (2016). Cancer prevention &amp; screening: prevention of breast and cervical cancer in populations of predominantly low income and uninsured women. Department of Health Policy and Management, Texas A&amp;M University, College Station, Texas.</p>
+
+<h3 id="masters-thesiscreative-componentpracticum-committee-chair">Master’s Thesis/Creative Component/Practicum Committee Chair</h3>
+
+<p>3. Esther Obende (2026). Mental health resources for international students. Health and Human Performance, Health Promotion (MS), Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>2. Elliot Parker (2025). Community connectedness and mental wellbeing in trans &amp; gender diverse communities. Public Health (MPH), Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>1. Deja Clement (2022). Examining the relationship between LGBT POC microaggressions, help-seeking, and health outcomes for Black sexual minority women: Using an intersectional framework. Public Health (MPH), Oklahoma State University, Stillwater, Oklahoma.</p>
+
+<h3 id="masters-thesiscreative-component-committee-member">Master’s Thesis/Creative Component Committee Member</h3>
+
+<p>3. Shariah James (2023). In the beginning pre-school academy LLC: in-home childcare wellness program. Health and Human Performance, Health Promotion (MS), Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>2. Dalton Blankinship (2022). Healthworks: cookbook creative component. Health and Human Performance, Health Promotion (MS), Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>1. Amy McGehee (2022). Interpersonal relationships as moderators in the link between aces and emerging adult adjustment: an exploration of cross-domain resilience. Human Development and Family Science (MS), Department of Human Development and Family Science, Oklahoma State University, Stillwater, Oklahoma.</p>
+
+<h3 id="undergraduate-mcnair-scholars">Undergraduate McNair Scholars</h3>
+
+<p>3. Shiann Ramirez. (2026). Social drivers of health, social constructs, and the use of prosthetic devices among people with limb deficiency. McNair Scholar Undergraduate Research Program, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>2. Leona Stevenson. (2026). The ABCs of academic accessibility: Accommodations, belongingness, and disclosure of disability. McNair Scholar Undergraduate Research Program, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>1. Caitlynn Cruz. (2025). Unstable housing, unequal health: Exploring housing instability among individuals with disabilities. McNair Scholar Undergraduate Research Program, Oklahoma State University, Stillwater, Oklahoma.</p>
+
+<h3 id="undergraduate-honors-thesis">Undergraduate Honors Thesis</h3>
+
+<p>3. Aryan Johnson. (2025). Empowering the next generation: enhancing undergraduate public health education at a land-grant university. Honors College, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>2. Mia Feehan. (2024). Promoting sexual and reproductive health access and education at oklahoma state university-tulsa. Honors College, Oklahoma State University, Stillwater, Oklahoma.</p>
+<p>Presented at the Oklahoma Public Health Association Public Health Week Student Showcase.</p>
+
+<ol type="1">
+<li>
+<p>Isabella Galvan. (2022). Perceptions of mental health, mental health resources, and stigma among college athletes. Honors College, Oklahoma State University, Stillwater, Oklahoma.</p>
+</li>
+</ol>
+<h3 id="undergraduate-creative-component">Undergraduate Creative Component</h3>
+<ol start="2" type="1">
+<li>
+<p>Cassie Adams. (2023). Appearance and performance enhancing drugs (APEDS) among college students. Public Health, Oklahoma State University, Stillwater, Oklahoma.</p>
+</li>
+</ol>
+
+<p>Presented at the Oklahoma Public Health Association Public Health Week Student Showcase.</p>
+
+<ol type="1">
+<li>
+<p>Alyssa Joyal. (2023). Recommendations for interventions for addressing eating disorders among women who are college athletes. Public Health, Oklahoma State University, Stillwater, Oklahoma.</p>
+</li>
+</ol>
+<h2 id="honors-and-awards">Honors and Awards</h2>
+
+
+
+<ul class="awards"><li><span class="yr">2026</span> Oklahoma State University Good Neighbor Award</li><li><span class="yr">2025</span> Oklahoma State University Regents Distinguished Research Award</li><li><span class="yr">2025</span> Oklahoma State University College of Education and Human Sciences Research Excellence Award</li><li><span class="yr">2025</span> Oklahoma Public Health Association Outstanding Mentor Award</li><li><span class="yr">2025</span> Oklahoma State University President’s Fellows Faculty Research Award</li><li><span class="yr">2024</span> Joan Donelson Jacques Health Promotion Endowed Professor</li><li><span class="yr">2023</span> Oklahoma State University Distinguished Early Career Faculty Award</li><li><span class="yr">2023</span> American Public Health Association Allan Meyers Award (Disability Section)</li><li><span class="yr">2020</span> Aggie Allies Rainbow Award</li><li><span class="yr">2016</span> Queer and Ally Alliance of the Texas A&amp;M School of Public Health Certificate of Support</li><li><span class="yr">2015</span> American Public Health Association New Investigator Award (Disability Section)</li><li><span class="yr">2011</span> Delta Omega Public Health Honor Society Induction</li></ul>
+<h2 id="service">Service</h2>
+<h3 id="profession">Profession</h3>
+
+<p>2020-2025 Associate Editor: <em>Progress in Community Health Partnerships</em></p>
+<p>2022- 2024 Governing Councilor, Public Health Education and Health Promotion Section, American Public Health Association</p>
+<p>2022-2023 Co-chair, Research Committee, Society for Public Health Education 2010-2025 Peer Reviewer for Journals: <em>BMC Health Services Research; BMC</em></p>
+<p><em>Public Health; The Lancet; The Gerontologist; The Journal of</em></p>
+<p><em>Applied Gerontology; The Archives of Gerontology; American Journal of Public Health; International Journal of Injury Control and Safety Promotion; Health and Social Care in the Community; International Journal of Environmental Research and Public Health; Journal of Aging and Social Policy; Journal of Medical Internet Research; LGBT Health; Autism; Disability and Health Journal; Journal of Autism and Developmental Disabilities</em></p>
+<p>2023-2024 Grant Reviewer, National Institute on Disability, Independent Living, and Rehabilitation Research (NIDILRR). NIDILRR is the U.S. federal</p>
+<p>government’s primary disability research organization. NIDILRR is part of the Administration for Community Living.</p>
+<p>2022-2023 President, Oklahoma Public Health Association</p>
+<p>2022 Chair, Advocacy Committee, Public Health Education and Health Promotion Section, American Public Health Association</p>
+<p>2021-2022 Chair, Public Policy Committee, Oklahoma Public Health Association 2020-2022 Innovation Lab Researcher, Public Health Education and Health</p>
+<p>Promotion Section, American Public Health Association</p>
+<p>2020-2021 Vice Chair, Public Policy Committee, Oklahoma Public Health Association 2019-2020 Board Member, Brazos County Pride Community Center</p>
+<p>2017-2019 Leadership Council Board Member, National Consumer Voice 2016-2020 Texas State Department of Health and Human Services IRB Board</p>
+
+<h3 id="university">University</h3>
+
+<p>2025 Regents Distinguished Teaching Award Selection Committee. (Appointed by the Provost).</p>
+<p>2024-2025 Eminent Faculty Award Screening Committee 2024-2025 Research Committee, Oklahoma State University</p>
+<p>2024-2025 Student Affairs and Learning Resources Committee, Oklahoma State University</p>
+<p>2024-2025 Faculty Council, CEHS representative, Oklahoma State University 2019-2020 Regulatory Affairs Committee, Texas A&amp;M University</p>
+<p>2018-2020 Interviewer, Public Policy Internship Program, Texas A&amp;M University 2014-2015 Graduate Curriculum Committee, Texas A&amp;M University</p>
+
+<h3 id="college">College</h3>
+
+<p>2023 Chair, CEHS Strategic Plan, Public Policy Innovative Committee of Practice</p>
+<p>2023-2024 Chair, Faculty Advisory Committee, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2023 Search Committee Member, for FCS Extension Asst State Specialist Search Committee</p>
+<p>2022-2023 Vice Chair, Faculty Advisory Committee, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2021-2023 Diversity, Equity, and Inclusion Committee, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2020-2022 Diversity Cord Committee, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2014-2015 Diversity Committee, Health Sciences Center, Texas A&amp;M University</p>
+
+<h3 id="unit">Unit</h3>
+
+<p>2021-2025 Wellness Innovator, School of Community Health Science, Counseling, and Counseling Psychology, Oklahoma State University</p>
+<p>2022-2024 Unit Representative, Faculty Advisory Committee, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2018-2020 Research Committee, School of Public Health, Texas A&amp;M University 2014-2015 Curriculum Committee, School of Public Health, Texas A&amp;M University 2014-2015 Co-Chair, Diversity Committee, School of Public Health, Texas A&amp;M</p>
+<p>University</p>
+
+<h3 id="program">Program</h3>
+
+<p>2024 Search Committee, Counseling Psychology, School of Community Health</p>
+<p>Sciences, Counseling, and Counseling Psychology, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2022-2024 Unit Representative, Faculty Advisory Committee, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2021-2022 Search Committee, Public Health Program, School of Community</p>
+<p>Health Sciences, Counseling, and Counseling Psychology, College of Education and Human Sciences, Oklahoma State University</p>
+<p>2012-2020 Health Services Research PhD Committee, Department of Health</p>
+<p>Policy and Management, School of Public Health Health, Texas A&amp;M University School of Public Health</p>
+<p>2011-2014 Master’s in Public Health Committee, Department of Health Policy</p>
+<p>and Management, School of Public Health Health, Texas A&amp;M University School of Public Health</p>
+
+<h2 id="professional-memberships">Professional Memberships</h2>
+
+<p>American Public Health Association (APHA) Oklahoma Public Health Association (OPHA) Society for Disability Studies (SDS)</p>
+<p>International Society for Autism Research (INSAR)</p>
+<p>American Association on Intellectual and Developmental Disabilities (AAIDD) American Association on Health and Disability (AAHD)</p>
+
+
+  </main>
+</div>
+
+<footer>Darcy Jones (DJ) McMaughan, Ph.D. &middot; Curriculum Vitae &middot; Updated August 2026</footer>
+
+<script>
+  // highlight the current section in the sidebar
+  const links = [...document.querySelectorAll('nav.toc a')];
+  const byId = Object.fromEntries(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const a = byId[e.target.id]; if (a) a.classList.add('active');
+      }
+    });
+  }, { rootMargin: '0px 0px -75% 0px' });
+  document.querySelectorAll('main h2[id]').forEach(h => obs.observe(h));
+</script>
+</body>
+</html>
