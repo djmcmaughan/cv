@@ -3,4 +3,4 @@
 **View online:** https://djmcmaughan.github.io/cv/
 **Download PDF:** [McMaughan_CV.pdf](McMaughan_CV.pdf)
 
-Professor and Interim School Head, School of Community Health Sciences, Counseling and Counseling Psychology, Oklahoma State University.
+Professor and Associate Dean for Academic Affairs, Graduate Education, and Research, College of Education and Human Sciences, Oklahoma State University.
